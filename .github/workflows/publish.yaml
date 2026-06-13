@@ -56,7 +56,5 @@ jobs:
         with:
           draft: true
           files: |
-            ./app/phone/build/outputs/apk/libre/release/findroid-${{ github.ref_name }}-libre-arm64-v8a.apk
-            ./app/phone/build/outputs/apk/libre/release/findroid-${{ github.ref_name }}-libre-armeabi-v7a.apk
-            ./app/phone/build/outputs/apk/libre/release/findroid-${{ github.ref_name }}-libre-x86_64.apk
-            ./app/phone/build/outputs/apk/libre/release/findroid-${{ github.ref_name }}-libre-x86.apk
+            ./app/phone/build/outputs/apk/libre/release/*.apk
+            ./app/tv/build/outputs/apk/libre/release/*.apk

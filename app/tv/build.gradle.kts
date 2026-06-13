@@ -38,6 +38,19 @@ android {
         }
     }
 
+    applicationVariants.all {
+        val variant = this
+        variant.outputs
+            .map { it as com.android.build.gradle.internal.api.BaseVariantOutputImpl }
+            .forEach { output ->
+                if (variant.buildType.name == "release") {
+                    val outputFileName =
+                        "VdCStudios-tv-v${variant.versionName}-${variant.flavorName}-${output.getFilter("ABI")}.apk"
+                    output.outputFileName = outputFileName
+                }
+            }
+    }
+
     flavorDimensions += "variant"
     productFlavors {
         register("libre") {

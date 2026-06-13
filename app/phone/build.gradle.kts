@@ -33,7 +33,7 @@ android {
             .forEach { output ->
                 if (variant.buildType.name == "release") {
                     val outputFileName =
-                        "findroid-v${variant.versionName}-${variant.flavorName}-${output.getFilter("ABI")}.apk"
+                        "VdCStudios-v${variant.versionName}-${variant.flavorName}-${output.getFilter("ABI")}.apk"
                     output.outputFileName = outputFileName
                 }
             }
