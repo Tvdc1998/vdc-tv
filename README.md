@@ -31,8 +31,9 @@ This application is built with Kotlin and Jetpack Compose.
 ### Building
 To build the project yourself, use the included Gradle wrapper:
 ```bash
-./gradlew assembleDebug
-```
+./gradlew assembleDebug voor de Debug
+./gradlew assembleLibreRelease voor volledige app
+
 
 ## License
 This project is licensed under the GPLv3 License.
