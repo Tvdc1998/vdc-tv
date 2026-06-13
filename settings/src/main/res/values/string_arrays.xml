@@ -5,12 +5,14 @@
         <item>@string/theme_light</item>
         <item>@string/theme_dark</item>
         <item>@string/theme_purple</item>
+        <item>@string/theme_pink</item>
     </string-array>
     <string-array name="theme_values">
         <item>system</item>
         <item>light</item>
         <item>dark</item>
         <item>purple</item>
+        <item>pink</item>
     </string-array>
     <string-array name="mpv_hwdec">
         <item>no</item>

@@ -4,6 +4,8 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import dev.jdtech.jellyfin.core.presentation.theme.ColorDark
 import dev.jdtech.jellyfin.core.presentation.theme.ColorLight
+import dev.jdtech.jellyfin.core.presentation.theme.ColorPinkDark
+import dev.jdtech.jellyfin.core.presentation.theme.ColorPinkLight
 import dev.jdtech.jellyfin.core.presentation.theme.ColorPurpleDark
 import dev.jdtech.jellyfin.core.presentation.theme.ColorPurpleLight
 
@@ -161,4 +163,82 @@ val purpleDarkScheme =
         surfaceContainer = ColorPurpleDark.surfaceContainerDark,
         surfaceContainerHigh = ColorPurpleDark.surfaceContainerHighDark,
         surfaceContainerHighest = ColorPurpleDark.surfaceContainerHighestDark,
+    )
+
+val pinkLightScheme =
+    lightColorScheme(
+        primary = ColorPinkLight.primaryLight,
+        onPrimary = ColorPinkLight.onPrimaryLight,
+        primaryContainer = ColorPinkLight.primaryContainerLight,
+        onPrimaryContainer = ColorPinkLight.onPrimaryContainerLight,
+        secondary = ColorPinkLight.secondaryLight,
+        onSecondary = ColorPinkLight.onSecondaryLight,
+        secondaryContainer = ColorPinkLight.secondaryContainerLight,
+        onSecondaryContainer = ColorPinkLight.onSecondaryContainerLight,
+        tertiary = ColorPinkLight.tertiaryLight,
+        onTertiary = ColorPinkLight.onTertiaryLight,
+        tertiaryContainer = ColorPinkLight.tertiaryContainerLight,
+        onTertiaryContainer = ColorPinkLight.onTertiaryContainerLight,
+        error = ColorPinkLight.errorLight,
+        onError = ColorPinkLight.onErrorLight,
+        errorContainer = ColorPinkLight.errorContainerLight,
+        onErrorContainer = ColorPinkLight.onErrorContainerLight,
+        background = ColorPinkLight.backgroundLight,
+        onBackground = ColorPinkLight.onBackgroundLight,
+        surface = ColorPinkLight.surfaceLight,
+        onSurface = ColorPinkLight.onSurfaceLight,
+        surfaceVariant = ColorPinkLight.surfaceVariantLight,
+        onSurfaceVariant = ColorPinkLight.onSurfaceVariantLight,
+        outline = ColorPinkLight.outlineLight,
+        outlineVariant = ColorPinkLight.outlineVariantLight,
+        scrim = ColorPinkLight.scrimLight,
+        inverseSurface = ColorPinkLight.inverseSurfaceLight,
+        inverseOnSurface = ColorPinkLight.inverseOnSurfaceLight,
+        inversePrimary = ColorPinkLight.inversePrimaryLight,
+        surfaceDim = ColorPinkLight.surfaceDimLight,
+        surfaceBright = ColorPinkLight.surfaceBrightLight,
+        surfaceContainerLowest = ColorPinkLight.surfaceContainerLowestLight,
+        surfaceContainerLow = ColorPinkLight.surfaceContainerLowLight,
+        surfaceContainer = ColorPinkLight.surfaceContainerLight,
+        surfaceContainerHigh = ColorPinkLight.surfaceContainerHighLight,
+        surfaceContainerHighest = ColorPinkLight.surfaceContainerHighestLight,
+    )
+
+val pinkDarkScheme =
+    darkColorScheme(
+        primary = ColorPinkDark.primaryDark,
+        onPrimary = ColorPinkDark.onPrimaryDark,
+        primaryContainer = ColorPinkDark.primaryContainerDark,
+        onPrimaryContainer = ColorPinkDark.onPrimaryContainerDark,
+        secondary = ColorPinkDark.secondaryDark,
+        onSecondary = ColorPinkDark.onSecondaryDark,
+        secondaryContainer = ColorPinkDark.secondaryContainerDark,
+        onSecondaryContainer = ColorPinkDark.onSecondaryContainerDark,
+        tertiary = ColorPinkDark.tertiaryDark,
+        onTertiary = ColorPinkDark.onTertiaryDark,
+        tertiaryContainer = ColorPinkDark.tertiaryContainerDark,
+        onTertiaryContainer = ColorPinkDark.onTertiaryContainerDark,
+        error = ColorPinkDark.errorDark,
+        onError = ColorPinkDark.onErrorDark,
+        errorContainer = ColorPinkDark.errorContainerDark,
+        onErrorContainer = ColorPinkDark.onErrorContainerDark,
+        background = ColorPinkDark.backgroundDark,
+        onBackground = ColorPinkDark.onBackgroundDark,
+        surface = ColorPinkDark.surfaceDark,
+        onSurface = ColorPinkDark.onSurfaceDark,
+        surfaceVariant = ColorPinkDark.surfaceVariantDark,
+        onSurfaceVariant = ColorPinkDark.onSurfaceVariantDark,
+        outline = ColorPinkDark.outlineDark,
+        outlineVariant = ColorPinkDark.outlineVariantDark,
+        scrim = ColorPinkDark.scrimDark,
+        inverseSurface = ColorPinkDark.inverseSurfaceDark,
+        inverseOnSurface = ColorPinkDark.inverseOnSurfaceDark,
+        inversePrimary = ColorPinkDark.inversePrimaryDark,
+        surfaceDim = ColorPinkDark.surfaceDimDark,
+        surfaceBright = ColorPinkDark.surfaceBrightDark,
+        surfaceContainerLowest = ColorPinkDark.surfaceContainerLowestDark,
+        surfaceContainerLow = ColorPinkDark.surfaceContainerLowDark,
+        surfaceContainer = ColorPinkDark.surfaceContainerDark,
+        surfaceContainerHigh = ColorPinkDark.surfaceContainerHighDark,
+        surfaceContainerHighest = ColorPinkDark.surfaceContainerHighestDark,
     )

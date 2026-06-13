@@ -17,23 +17,29 @@ import androidx.tv.material3.contentColorFor as contentColorForTv
 import dev.jdtech.jellyfin.core.presentation.theme.Spacings
 
 @Composable
-fun FindroidTheme(content: @Composable BoxScope.() -> Unit) {
-    MaterialTheme(colorScheme = darkScheme, typography = Typography, shapes = shapes) {
-        MaterialThemeTv(colorScheme = darkSchemeTv, typography = TypographyTv, shapes = shapesTv) {
+fun FindroidTheme(theme: String = "system", content: @Composable BoxScope.() -> Unit) {
+    val (colorScheme, colorSchemeTv, background) =
+        when (theme) {
+            "purple" ->
+                Triple(
+                    purpleDarkScheme,
+                    purpleDarkSchemeTv,
+                    listOf(Color.Black, Color(0xFF350040)),
+                )
+            "pink" ->
+                Triple(pinkDarkScheme, pinkDarkSchemeTv, listOf(Color.Black, Color(0xFF3E001E)))
+            else -> Triple(darkScheme, darkSchemeTv, listOf(Color.Black, Color(0xFF001721)))
+        }
+
+    MaterialTheme(colorScheme = colorScheme, typography = Typography, shapes = shapes) {
+        MaterialThemeTv(colorScheme = colorSchemeTv, typography = TypographyTv, shapes = shapesTv) {
             CompositionLocalProvider(
                 LocalContentColor provides contentColorFor(MaterialTheme.colorScheme.background),
                 LocalContentColorTv provides
                     contentColorForTv(MaterialThemeTv.colorScheme.background),
                 LocalSpacings provides Spacings,
             ) {
-                Box(
-                    modifier =
-                        Modifier.background(
-                            Brush.linearGradient(listOf(Color.Black, Color(0xFF001721)))
-                        )
-                ) {
-                    content()
-                }
+                Box(modifier = Modifier.background(Brush.linearGradient(background))) { content() }
             }
         }
     }

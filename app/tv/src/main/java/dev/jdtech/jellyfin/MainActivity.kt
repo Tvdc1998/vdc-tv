@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             val state by viewModel.state.collectAsStateWithLifecycle()
 
-            FindroidTheme {
+            FindroidTheme(theme = state.theme) {
                 val navController = rememberNavController()
                 if (!state.isLoading) {
                     NavigationRoot(

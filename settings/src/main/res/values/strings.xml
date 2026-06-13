@@ -73,6 +73,7 @@
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
     <string name="theme_purple">Purple</string>
+    <string name="theme_pink">Girly Pink</string>
     <string name="dynamic_colors">Dynamic colors</string>
     <string name="dynamic_colors_summary">Use Material You Dynamic colors (only available on Android 12+)</string>
     <string name="extra_info">Display Extra Info</string>

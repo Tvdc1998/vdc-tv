@@ -27,6 +27,7 @@ fun FindroidTheme(
                 if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
             }
             theme == "purple" -> if (darkTheme) purpleDarkScheme else purpleLightScheme
+            theme == "pink" -> if (darkTheme) pinkDarkScheme else pinkLightScheme
             darkTheme -> darkScheme
             else -> lightScheme
         }

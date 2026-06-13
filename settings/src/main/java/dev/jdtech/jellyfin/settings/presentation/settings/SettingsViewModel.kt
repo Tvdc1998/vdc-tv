@@ -134,7 +134,8 @@ class SettingsViewModel @Inject constructor(private val appPreferences: AppPrefe
                                             listOf(
                                                 PreferenceSelect(
                                                     nameStringResource = R.string.theme,
-                                                    supportedDeviceTypes = listOf(DeviceType.PHONE),
+                                                    supportedDeviceTypes =
+                                                        listOf(DeviceType.PHONE, DeviceType.TV),
                                                     backendPreference = appPreferences.theme,
                                                     onUpdate = { value ->
                                                         viewModelScope.launch {
