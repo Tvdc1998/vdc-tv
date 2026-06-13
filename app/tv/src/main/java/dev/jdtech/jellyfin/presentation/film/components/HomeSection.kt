@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
 import dev.jdtech.jellyfin.film.presentation.home.HomeAction
+import dev.jdtech.jellyfin.film.presentation.library.LibraryViewType
 import dev.jdtech.jellyfin.models.HomeSection
 import dev.jdtech.jellyfin.presentation.theme.spacings
 import dev.jdtech.jellyfin.ui.components.Direction
@@ -24,6 +25,7 @@ fun HomeSection(
     itemsPadding: PaddingValues,
     onAction: (HomeAction) -> Unit,
     modifier: Modifier = Modifier,
+    viewType: LibraryViewType = LibraryViewType.POSTER,
 ) {
     Column(modifier = modifier) {
         Text(
@@ -41,6 +43,7 @@ fun HomeSection(
                     item = item,
                     direction = Direction.HORIZONTAL,
                     onClick = { onAction(HomeAction.OnItemClick(it)) },
+                    viewType = viewType,
                 )
             }
         }

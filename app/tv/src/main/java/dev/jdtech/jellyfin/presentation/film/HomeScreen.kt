@@ -20,6 +20,7 @@ import dev.jdtech.jellyfin.core.presentation.dummy.dummyHomeView
 import dev.jdtech.jellyfin.film.presentation.home.HomeAction
 import dev.jdtech.jellyfin.film.presentation.home.HomeState
 import dev.jdtech.jellyfin.film.presentation.home.HomeViewModel
+import dev.jdtech.jellyfin.film.presentation.library.LibraryViewType
 import dev.jdtech.jellyfin.models.FindroidEpisode
 import dev.jdtech.jellyfin.models.FindroidMovie
 import dev.jdtech.jellyfin.models.FindroidShow
@@ -106,6 +107,15 @@ private fun HomeScreenLayout(state: HomeState, onAction: (HomeAction) -> Unit) {
                     modifier = Modifier.animateItem(),
                 )
             }
+        }
+        items(state.genreSections, key = { it.id }) { section ->
+            HomeSection(
+                section = section.homeSection,
+                itemsPadding = itemsPadding,
+                onAction = onAction,
+                modifier = Modifier.animateItem(),
+                viewType = LibraryViewType.THUMBNAIL,
+            )
         }
         items(state.views, key = { it.id }) { view ->
             HomeView(

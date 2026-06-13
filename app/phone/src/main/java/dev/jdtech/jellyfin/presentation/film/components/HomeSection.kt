@@ -17,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import dev.jdtech.jellyfin.film.presentation.home.HomeAction
+import dev.jdtech.jellyfin.film.presentation.library.LibraryViewType
 import dev.jdtech.jellyfin.models.HomeSection
 import dev.jdtech.jellyfin.presentation.theme.spacings
 
@@ -26,6 +27,7 @@ fun HomeSection(
     itemsPadding: PaddingValues,
     onAction: (HomeAction) -> Unit,
     modifier: Modifier = Modifier,
+    viewType: LibraryViewType = LibraryViewType.POSTER,
 ) {
     Column(modifier = modifier) {
         Box(modifier = Modifier.fillMaxWidth().height(42.dp).padding(itemsPadding)) {
@@ -45,6 +47,7 @@ fun HomeSection(
                     item = item,
                     direction = Direction.HORIZONTAL,
                     onClick = { onAction(HomeAction.OnItemClick(item)) },
+                    viewType = viewType,
                 )
             }
         }
