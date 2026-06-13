@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.VdCStudios" parent="Theme.Material3.Dark.NoActionBar" />
+
+    <style name="Theme.VdCStudios.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.VdCStudios</item>
+    </style>
+</resources>

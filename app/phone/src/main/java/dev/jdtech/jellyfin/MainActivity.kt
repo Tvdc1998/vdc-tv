@@ -1,0 +1,78 @@
+package dev.jdtech.jellyfin
+
+import android.os.Bundle
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.compose.rememberNavController
+import androidx.work.Constraints
+import androidx.work.ExistingWorkPolicy
+import androidx.work.NetworkType
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.WorkManager
+import dagger.hilt.android.AndroidEntryPoint
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.utils.LocalOfflineMode
+import dev.jdtech.jellyfin.viewmodels.MainViewModel
+import dev.jdtech.jellyfin.work.SyncWorker
+
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity() {
+    private val viewModel: MainViewModel by viewModels()
+
+    override fun onResume() {
+        super.onResume()
+        viewModel.refresh()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
+        super.onCreate(savedInstanceState)
+
+        enableEdgeToEdge()
+
+        setContent {
+            val state by viewModel.state.collectAsStateWithLifecycle()
+
+            FindroidTheme(
+                dynamicColor = false,
+                theme = state.theme
+            ) {
+                val navController = rememberNavController()
+                if (!state.isLoading) {
+                    CompositionLocalProvider(LocalOfflineMode provides state.isOfflineMode) {
+                        NavigationRoot(
+                            navController = navController,
+                            hasServers = state.hasServers,
+                            hasCurrentServer = state.hasCurrentServer,
+                            hasCurrentUser = state.hasCurrentUser,
+                        )
+                    }
+                }
+            }
+        }
+
+        scheduleUserDataSync()
+    }
+
+    private fun scheduleUserDataSync() {
+        val syncWorkRequest =
+            OneTimeWorkRequestBuilder<SyncWorker>()
+                .setConstraints(
+                    Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build()
+                )
+                .build()
+
+        val workManager = WorkManager.getInstance(applicationContext)
+
+        workManager
+            .beginUniqueWork("syncUserData", ExistingWorkPolicy.KEEP, syncWorkRequest)
+            .enqueue()
+    }
+}
