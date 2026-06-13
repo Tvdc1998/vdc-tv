@@ -24,10 +24,14 @@ fun FindroidTheme(theme: String = "system", content: @Composable BoxScope.() -> 
                 Triple(
                     purpleDarkScheme,
                     purpleDarkSchemeTv,
-                    listOf(Color.Black, Color(0xFF350040)),
+                    listOf(Color(0xFF9C27B0), Color(0xFF7B1FA2)),
                 )
             "pink" ->
-                Triple(pinkDarkScheme, pinkDarkSchemeTv, listOf(Color.Black, Color(0xFF3E001E)))
+                Triple(
+                    pinkDarkScheme,
+                    pinkDarkSchemeTv,
+                    listOf(Color(0xFFE977B5), Color(0xFFC2185B)),
+                )
             else -> Triple(darkScheme, darkSchemeTv, listOf(Color.Black, Color(0xFF001721)))
         }
 
