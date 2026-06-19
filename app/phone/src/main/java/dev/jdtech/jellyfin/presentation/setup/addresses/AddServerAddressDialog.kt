@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.addresses
+=======
+package dev.jdtech.jellyfin.presentation.setup.addresses
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -20,10 +24,17 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.presentation.components.BaseDialog
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.setup.R as SetupR
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.presentation.components.BaseDialog
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.setup.R as SetupR
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun AddServerAddressDialog(onAdd: (address: String) -> Unit, onDismiss: () -> Unit) {

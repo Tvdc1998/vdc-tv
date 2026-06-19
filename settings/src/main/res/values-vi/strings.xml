@@ -57,4 +57,8 @@
     <string name="picture_in_picture_gesture_summary">Sử dùng phím hoặc cử chỉ về màn hình chính để vào chế độ Hình trong Hình khi video đang phát</string>
     <string name="picture_in_picture_gesture">Cử chỉ về màn hình chính khi đang hình trong hình</string>
     <string name="app_language">Ngôn ngữ của ứng dụng</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

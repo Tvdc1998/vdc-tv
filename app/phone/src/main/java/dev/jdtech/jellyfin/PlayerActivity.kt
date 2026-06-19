@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv
+=======
+package dev.jdtech.jellyfin
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.AppOpsManager
 import android.app.PictureInPictureParams
@@ -34,6 +38,7 @@ import androidx.media3.ui.DefaultTimeBar
 import androidx.media3.ui.PlayerControlView
 import androidx.media3.ui.PlayerView
 import dagger.hilt.android.AndroidEntryPoint
+<<<<<<< HEAD
 import com.vdc.tv.databinding.ActivityPlayerBinding
 import com.vdc.tv.player.local.presentation.PlayerEvents
 import com.vdc.tv.player.local.presentation.PlayerViewModel
@@ -43,6 +48,17 @@ import com.vdc.tv.presentation.player.TrackSelectionDialogFragment
 import com.vdc.tv.settings.domain.AppPreferences
 import com.vdc.tv.utils.PlayerGestureHelper
 import com.vdc.tv.utils.PreviewScrubListener
+=======
+import dev.jdtech.jellyfin.databinding.ActivityPlayerBinding
+import dev.jdtech.jellyfin.player.local.presentation.PlayerEvents
+import dev.jdtech.jellyfin.player.local.presentation.PlayerViewModel
+import dev.jdtech.jellyfin.presentation.player.SpeedSelectionDialogFragment
+import dev.jdtech.jellyfin.presentation.player.SubtitleDownloadBottomSheetFragment
+import dev.jdtech.jellyfin.presentation.player.TrackSelectionDialogFragment
+import dev.jdtech.jellyfin.settings.domain.AppPreferences
+import dev.jdtech.jellyfin.utils.PlayerGestureHelper
+import dev.jdtech.jellyfin.utils.PreviewScrubListener
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import javax.inject.Inject
 import kotlinx.coroutines.delay

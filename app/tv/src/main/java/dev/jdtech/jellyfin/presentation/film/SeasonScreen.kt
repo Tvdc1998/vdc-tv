@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film
+=======
+package dev.jdtech.jellyfin.presentation.film
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -20,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
+<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyEpisodes
 import com.vdc.tv.core.presentation.dummy.dummySeason
 import com.vdc.tv.film.presentation.season.SeasonAction
@@ -28,6 +33,16 @@ import com.vdc.tv.film.presentation.season.SeasonViewModel
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.ui.components.EpisodeCard
+=======
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyEpisodes
+import dev.jdtech.jellyfin.core.presentation.dummy.dummySeason
+import dev.jdtech.jellyfin.film.presentation.season.SeasonAction
+import dev.jdtech.jellyfin.film.presentation.season.SeasonState
+import dev.jdtech.jellyfin.film.presentation.season.SeasonViewModel
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.ui.components.EpisodeCard
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @Composable

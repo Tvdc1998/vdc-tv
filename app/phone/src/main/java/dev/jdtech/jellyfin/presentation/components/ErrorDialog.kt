@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.components
+=======
+package dev.jdtech.jellyfin.presentation.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.Intent
 import androidx.compose.foundation.background
@@ -26,9 +30,15 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun ErrorDialog(exception: Throwable, onDismissRequest: () -> Unit) {

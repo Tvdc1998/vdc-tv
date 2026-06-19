@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film
+=======
+package dev.jdtech.jellyfin.presentation.film
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -27,6 +31,7 @@ import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyHomeSection
 import com.vdc.tv.core.presentation.dummy.dummyHomeSuggestions
 import com.vdc.tv.core.presentation.dummy.dummyHomeView
@@ -46,6 +51,27 @@ import com.vdc.tv.presentation.film.components.ServerSelectionBottomSheet
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.rememberSafePadding
+=======
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyHomeSection
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyHomeSuggestions
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyHomeView
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyServer
+import dev.jdtech.jellyfin.film.presentation.home.HomeAction
+import dev.jdtech.jellyfin.film.presentation.home.HomeState
+import dev.jdtech.jellyfin.film.presentation.home.HomeViewModel
+import dev.jdtech.jellyfin.film.presentation.library.LibraryViewType
+import dev.jdtech.jellyfin.models.FindroidCollection
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.presentation.components.ErrorDialog
+import dev.jdtech.jellyfin.presentation.film.components.HomeCarousel
+import dev.jdtech.jellyfin.presentation.film.components.HomeHeader
+import dev.jdtech.jellyfin.presentation.film.components.HomeSection
+import dev.jdtech.jellyfin.presentation.film.components.HomeView
+import dev.jdtech.jellyfin.presentation.film.components.ServerSelectionBottomSheet
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.presentation.utils.rememberSafePadding
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import kotlinx.coroutines.launch
 
 @Composable

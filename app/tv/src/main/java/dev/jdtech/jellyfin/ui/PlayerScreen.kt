@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.ui
+=======
+package dev.jdtech.jellyfin.ui
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.focusable
 import androidx.compose.foundation.layout.Arrangement
@@ -43,6 +47,7 @@ import androidx.tv.material3.ButtonDefaults
 import androidx.tv.material3.Glow
 import androidx.tv.material3.Icon
 import androidx.tv.material3.MaterialTheme
+<<<<<<< HEAD
 import com.vdc.tv.core.R
 import com.vdc.tv.player.core.domain.models.Track
 import com.vdc.tv.player.local.presentation.PlayerViewModel
@@ -56,6 +61,21 @@ import com.vdc.tv.ui.components.player.VideoPlayerState
 import com.vdc.tv.ui.components.player.rememberVideoPlayerState
 import com.vdc.tv.ui.dialogs.SubtitleDownloadDialog
 import com.vdc.tv.utils.handleDPadKeyEvents
+=======
+import dev.jdtech.jellyfin.core.R
+import dev.jdtech.jellyfin.player.core.domain.models.Track
+import dev.jdtech.jellyfin.player.local.presentation.PlayerViewModel
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.ui.components.player.VideoPlayerControlsLayout
+import dev.jdtech.jellyfin.ui.components.player.VideoPlayerMediaButton
+import dev.jdtech.jellyfin.ui.components.player.VideoPlayerMediaTitle
+import dev.jdtech.jellyfin.ui.components.player.VideoPlayerOverlay
+import dev.jdtech.jellyfin.ui.components.player.VideoPlayerSeeker
+import dev.jdtech.jellyfin.ui.components.player.VideoPlayerState
+import dev.jdtech.jellyfin.ui.components.player.rememberVideoPlayerState
+import dev.jdtech.jellyfin.ui.dialogs.SubtitleDownloadDialog
+import dev.jdtech.jellyfin.utils.handleDPadKeyEvents
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.Locale
 import java.util.UUID
 import kotlin.time.Duration.Companion.milliseconds

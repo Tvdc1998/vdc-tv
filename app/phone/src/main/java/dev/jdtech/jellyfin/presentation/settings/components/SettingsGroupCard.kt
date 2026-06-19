@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.settings.components
+=======
+package dev.jdtech.jellyfin.presentation.settings.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -16,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.util.fastForEachIndexed
+<<<<<<< HEAD
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.settings.R as SettingsR
@@ -29,6 +34,21 @@ import com.vdc.tv.settings.presentation.models.PreferenceMultiSelect
 import com.vdc.tv.settings.presentation.models.PreferenceSelect
 import com.vdc.tv.settings.presentation.models.PreferenceSwitch
 import com.vdc.tv.settings.presentation.settings.SettingsAction
+=======
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.settings.R as SettingsR
+import dev.jdtech.jellyfin.settings.domain.models.Preference
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceAppLanguage
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceCategory
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceGroup
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceIntInput
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceLongInput
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceMultiSelect
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceSelect
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceSwitch
+import dev.jdtech.jellyfin.settings.presentation.settings.SettingsAction
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun SettingsGroupCard(

@@ -14,4 +14,8 @@
     <string name="add_server_address">Adaugă o adresă de server</string>
     <string name="remove_server_address">Eliminați adresa serverului</string>
     <string name="remove_server_address_dialog_text">Sunteți sigur că doriți să eliminați adresa serverului %1$s</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

@@ -21,10 +21,17 @@
    <string name="servers_btn_add_server">Add server</string>
    <string name="remove_server_dialog">Remove server</string>
    <string name="remove_server_dialog_text">Are you sure you want to remove the server %s?</string>
+<<<<<<< HEAD
    <string name="welcome">Welcome to VdC TV</string>
    <string name="welcome_btn_continue">Continue</string>
    <string name="welcome_btn_learn_more">Learn more about Jellyfin</string>
    <string name="welcome_text">VdC TV is a Jellyfin Client from VdC studios. Log in with your Jellyfin server to get started.</string>
+=======
+   <string name="welcome">Welcome to VDC Studios</string>
+   <string name="welcome_btn_continue">Continue</string>
+   <string name="welcome_btn_learn_more">Learn more about Jellyfin</string>
+   <string name="welcome_text">VDC Studios is a third-party client for Jellyfin. VDC Studios by itself does not contain any media.\n\nIn order to use this client, you need to host your own Jellyfin server.</string>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
    <string name="confirm">Confirm</string>
    <string name="cancel">Cancel</string>
    <string name="or">OR</string>
@@ -39,4 +46,8 @@
    <string name="add_server_address">Add server address</string>
    <string name="remove_server_address">Remove server address</string>
    <string name="remove_server_address_dialog_text">Are you sure you want to remove the server address %1$s</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

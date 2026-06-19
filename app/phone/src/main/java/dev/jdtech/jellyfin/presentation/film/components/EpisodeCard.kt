@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
+=======
+package dev.jdtech.jellyfin.presentation.film.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.clickable
@@ -25,11 +29,19 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyEpisode
 import com.vdc.tv.models.FindroidEpisode
 import com.vdc.tv.models.isDownloaded
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
+=======
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyEpisode
+import dev.jdtech.jellyfin.models.FindroidEpisode
+import dev.jdtech.jellyfin.models.isDownloaded
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun EpisodeCard(episode: FindroidEpisode, onClick: () -> Unit, modifier: Modifier = Modifier) {
@@ -63,7 +75,11 @@ fun EpisodeCard(episode: FindroidEpisode, onClick: () -> Unit, modifier: Modifie
                 Text(
                     text =
                         stringResource(
+<<<<<<< HEAD
                             id = com.vdc.tv.core.R.string.episode_name,
+=======
+                            id = dev.jdtech.jellyfin.core.R.string.episode_name,
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                             episode.indexNumber,
                             episode.name,
                         ),

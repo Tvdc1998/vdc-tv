@@ -3,4 +3,8 @@
     <item name="server_columns" type="integer">8</item>
     <item name="library_columns" type="integer">4</item>
     <dimen name="person_detail_overview_height">200dp</dimen>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

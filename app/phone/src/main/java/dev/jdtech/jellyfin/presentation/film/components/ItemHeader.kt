@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
+=======
+package dev.jdtech.jellyfin.presentation.film.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.net.Uri
 import androidx.compose.foundation.Canvas
@@ -22,11 +26,19 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
+<<<<<<< HEAD
 import com.vdc.tv.models.FindroidEpisode
 import com.vdc.tv.models.FindroidItem
 import com.vdc.tv.models.FindroidSeason
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.parallaxLayoutModifier
+=======
+import dev.jdtech.jellyfin.models.FindroidEpisode
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.models.FindroidSeason
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.presentation.utils.parallaxLayoutModifier
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun ItemHeader(

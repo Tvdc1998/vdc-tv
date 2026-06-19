@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
+=======
+package dev.jdtech.jellyfin.presentation.film.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -22,6 +26,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyServer
 import com.vdc.tv.core.presentation.dummy.dummyServerAddress
@@ -33,6 +38,19 @@ import com.vdc.tv.setup.presentation.servers.ServersEvent
 import com.vdc.tv.setup.presentation.servers.ServersState
 import com.vdc.tv.setup.presentation.servers.ServersViewModel
 import com.vdc.tv.utils.ObserveAsEvents
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyServer
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyServerAddress
+import dev.jdtech.jellyfin.models.ServerWithAddresses
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.setup.presentation.servers.ServersAction
+import dev.jdtech.jellyfin.setup.presentation.servers.ServersEvent
+import dev.jdtech.jellyfin.setup.presentation.servers.ServersState
+import dev.jdtech.jellyfin.setup.presentation.servers.ServersViewModel
+import dev.jdtech.jellyfin.utils.ObserveAsEvents
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

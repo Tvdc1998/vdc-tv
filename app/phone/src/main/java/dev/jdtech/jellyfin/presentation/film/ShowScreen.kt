@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film
+=======
+package dev.jdtech.jellyfin.presentation.film
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.Intent
 import android.widget.Toast
@@ -40,6 +44,7 @@ import androidx.compose.ui.unit.dp
 import androidx.core.graphics.toColorInt
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+<<<<<<< HEAD
 import com.vdc.tv.PlayerActivity
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyShow
@@ -60,6 +65,28 @@ import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.rememberSafePadding
 import com.vdc.tv.utils.getShowDateString
+=======
+import dev.jdtech.jellyfin.PlayerActivity
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyShow
+import dev.jdtech.jellyfin.film.presentation.show.ShowAction
+import dev.jdtech.jellyfin.film.presentation.show.ShowState
+import dev.jdtech.jellyfin.film.presentation.show.ShowViewModel
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.presentation.film.components.ActorsRow
+import dev.jdtech.jellyfin.presentation.film.components.Direction
+import dev.jdtech.jellyfin.presentation.film.components.InfoText
+import dev.jdtech.jellyfin.presentation.film.components.ItemButtonsBar
+import dev.jdtech.jellyfin.presentation.film.components.ItemCard
+import dev.jdtech.jellyfin.presentation.film.components.ItemHeader
+import dev.jdtech.jellyfin.presentation.film.components.ItemPoster
+import dev.jdtech.jellyfin.presentation.film.components.ItemTopBar
+import dev.jdtech.jellyfin.presentation.film.components.OverviewText
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.presentation.utils.rememberSafePadding
+import dev.jdtech.jellyfin.utils.getShowDateString
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import org.jellyfin.sdk.model.api.BaseItemKind
 

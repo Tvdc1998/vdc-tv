@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.welcome
+=======
+package dev.jdtech.jellyfin.presentation.setup.welcome
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -23,11 +27,19 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.presentation.setup.components.RootLayout
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.setup.R as SetupR
 import com.vdc.tv.setup.presentation.welcome.WelcomeAction
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.presentation.setup.components.RootLayout
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.setup.R as SetupR
+import dev.jdtech.jellyfin.setup.presentation.welcome.WelcomeAction
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun WelcomeScreen(onContinueClick: () -> Unit) {
@@ -83,12 +95,15 @@ private fun WelcomeScreenLayout(onAction: (WelcomeAction) -> Unit) {
                 ) {
                     Text(text = stringResource(SetupR.string.welcome_btn_continue))
                 }
+<<<<<<< HEAD
                 Spacer(modifier = Modifier.height(16.dp))
                 Image(
                     painter = painterResource(id = CoreR.drawable.vdcstudios_banner_transparant),
                     contentDescription = null,
                     modifier = Modifier.width(100.dp).align(Alignment.End),
                 )
+=======
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
             }
         }
     }

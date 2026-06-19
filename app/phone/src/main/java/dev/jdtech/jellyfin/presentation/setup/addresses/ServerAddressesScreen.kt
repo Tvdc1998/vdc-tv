@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.addresses
+=======
+package dev.jdtech.jellyfin.presentation.setup.addresses
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
@@ -41,6 +45,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyServerAddress
 import com.vdc.tv.models.ServerAddress
@@ -51,6 +56,18 @@ import com.vdc.tv.setup.R as SetupR
 import com.vdc.tv.setup.presentation.addresses.ServerAddressesAction
 import com.vdc.tv.setup.presentation.addresses.ServerAddressesState
 import com.vdc.tv.setup.presentation.addresses.ServerAddressesViewModel
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyServerAddress
+import dev.jdtech.jellyfin.models.ServerAddress
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.presentation.utils.rememberSafePadding
+import dev.jdtech.jellyfin.setup.R as SetupR
+import dev.jdtech.jellyfin.setup.presentation.addresses.ServerAddressesAction
+import dev.jdtech.jellyfin.setup.presentation.addresses.ServerAddressesState
+import dev.jdtech.jellyfin.setup.presentation.addresses.ServerAddressesViewModel
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun ServerAddressesScreen(

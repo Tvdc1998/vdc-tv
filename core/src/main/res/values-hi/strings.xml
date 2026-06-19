@@ -54,4 +54,8 @@
     <string name="image_description_backdrop">%1$s पृष्ठभूमि</string>
     <string name="close">बंद करें</string>
     <string name="image_description_poster">%1$s पोस्टर</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

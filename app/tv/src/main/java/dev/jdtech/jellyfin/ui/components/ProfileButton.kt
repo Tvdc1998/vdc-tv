@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.ui.components
+=======
+package dev.jdtech.jellyfin.ui.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.aspectRatio
@@ -20,11 +24,19 @@ import androidx.tv.material3.ClickableSurfaceDefaults
 import androidx.tv.material3.Icon
 import androidx.tv.material3.Surface
 import coil3.compose.AsyncImage
+<<<<<<< HEAD
 import com.vdc.tv.api.JellyfinApi
 import com.vdc.tv.core.R
 import com.vdc.tv.core.presentation.dummy.dummyUser
 import com.vdc.tv.models.User
 import com.vdc.tv.presentation.theme.FindroidTheme
+=======
+import dev.jdtech.jellyfin.api.JellyfinApi
+import dev.jdtech.jellyfin.core.R
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyUser
+import dev.jdtech.jellyfin.models.User
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import org.jellyfin.sdk.model.api.ImageType
 
 @Composable

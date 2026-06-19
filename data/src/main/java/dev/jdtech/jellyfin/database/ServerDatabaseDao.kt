@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.database
+=======
+package dev.jdtech.jellyfin.database
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -6,6 +10,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
+<<<<<<< HEAD
 import com.vdc.tv.models.FindroidEpisodeDto
 import com.vdc.tv.models.FindroidMediaStreamDto
 import com.vdc.tv.models.FindroidMovieDto
@@ -22,6 +27,24 @@ import com.vdc.tv.models.ServerWithAddresses
 import com.vdc.tv.models.ServerWithAddressesAndUsers
 import com.vdc.tv.models.ServerWithUsers
 import com.vdc.tv.models.User
+=======
+import dev.jdtech.jellyfin.models.FindroidEpisodeDto
+import dev.jdtech.jellyfin.models.FindroidMediaStreamDto
+import dev.jdtech.jellyfin.models.FindroidMovieDto
+import dev.jdtech.jellyfin.models.FindroidSeasonDto
+import dev.jdtech.jellyfin.models.FindroidSegmentDto
+import dev.jdtech.jellyfin.models.FindroidShowDto
+import dev.jdtech.jellyfin.models.FindroidSourceDto
+import dev.jdtech.jellyfin.models.FindroidTrickplayInfoDto
+import dev.jdtech.jellyfin.models.FindroidUserDataDto
+import dev.jdtech.jellyfin.models.Server
+import dev.jdtech.jellyfin.models.ServerAddress
+import dev.jdtech.jellyfin.models.ServerWithAddressAndUser
+import dev.jdtech.jellyfin.models.ServerWithAddresses
+import dev.jdtech.jellyfin.models.ServerWithAddressesAndUsers
+import dev.jdtech.jellyfin.models.ServerWithUsers
+import dev.jdtech.jellyfin.models.User
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @Dao

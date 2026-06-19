@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv
+=======
+package dev.jdtech.jellyfin
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -30,6 +34,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.toRoute
 import androidx.window.core.layout.WindowSizeClass
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.models.CollectionType
 import com.vdc.tv.models.FindroidBoxSet
@@ -60,6 +65,38 @@ import com.vdc.tv.presentation.setup.servers.ServersScreen
 import com.vdc.tv.presentation.setup.users.UsersScreen
 import com.vdc.tv.presentation.setup.welcome.WelcomeScreen
 import com.vdc.tv.presentation.utils.LocalOfflineMode
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.models.CollectionType
+import dev.jdtech.jellyfin.models.FindroidBoxSet
+import dev.jdtech.jellyfin.models.FindroidCollection
+import dev.jdtech.jellyfin.models.FindroidEpisode
+import dev.jdtech.jellyfin.models.FindroidFolder
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.models.FindroidMovie
+import dev.jdtech.jellyfin.models.FindroidSeason
+import dev.jdtech.jellyfin.models.FindroidShow
+import dev.jdtech.jellyfin.presentation.film.CollectionScreen
+import dev.jdtech.jellyfin.presentation.film.DownloadsScreen
+import dev.jdtech.jellyfin.presentation.film.EpisodeScreen
+import dev.jdtech.jellyfin.presentation.film.FavoritesScreen
+import dev.jdtech.jellyfin.presentation.film.HomeScreen
+import dev.jdtech.jellyfin.presentation.film.LibraryScreen
+import dev.jdtech.jellyfin.presentation.film.MediaScreen
+import dev.jdtech.jellyfin.presentation.film.MovieScreen
+import dev.jdtech.jellyfin.presentation.film.PersonScreen
+import dev.jdtech.jellyfin.presentation.film.SeasonScreen
+import dev.jdtech.jellyfin.presentation.film.ShowScreen
+import dev.jdtech.jellyfin.presentation.settings.AboutScreen
+import dev.jdtech.jellyfin.presentation.settings.SettingsScreen
+import dev.jdtech.jellyfin.presentation.setup.addresses.ServerAddressesScreen
+import dev.jdtech.jellyfin.presentation.setup.addserver.AddServerScreen
+import dev.jdtech.jellyfin.presentation.setup.login.LoginScreen
+import dev.jdtech.jellyfin.presentation.setup.servers.ServersScreen
+import dev.jdtech.jellyfin.presentation.setup.users.UsersScreen
+import dev.jdtech.jellyfin.presentation.setup.welcome.WelcomeScreen
+import dev.jdtech.jellyfin.presentation.utils.LocalOfflineMode
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import kotlinx.serialization.Serializable
 

@@ -30,10 +30,17 @@
     <string name="remove_server_address">Verwijder server adres</string>
     <string name="remove_server_address_dialog_text">Weet u zeker dat u het server adres %1$s wilt verwijderen</string>
     <string name="servers_btn_add_server">Server toevoegen</string>
+<<<<<<< HEAD
     <string name="welcome">Welkom bij VdC TV</string>
     <string name="welcome_btn_continue">Doorgaan</string>
     <string name="welcome_btn_learn_more">Kom meer te weten over Jellyfin</string>
     <string name="welcome_text">VdC TV is een Jellyfin Client van VdC studios. Log in met je Jellyfin server om te beginnen.</string>
+=======
+    <string name="welcome">Welkom bij VDC Studios</string>
+    <string name="welcome_btn_continue">Doorgaan</string>
+    <string name="welcome_btn_learn_more">Kom meer te weten over Jellyfin</string>
+    <string name="welcome_text">VDC Studios is een client van derden voor Jellyfin. VDC Studios zelf bevat geen media.\n\nOm deze client te gebruiken, moet je je eigen Jellyfin-server hosten.</string>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
     <string name="confirm">Bevestigen</string>
     <string name="cancel">Annuleren</string>
 </resources>

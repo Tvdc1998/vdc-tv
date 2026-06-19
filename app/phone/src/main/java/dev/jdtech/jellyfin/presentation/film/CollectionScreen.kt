@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film
+=======
+package dev.jdtech.jellyfin.presentation.film
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.displayCutout
@@ -22,6 +26,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyMovies
 import com.vdc.tv.film.presentation.collection.CollectionAction
@@ -32,6 +37,18 @@ import com.vdc.tv.models.FindroidItem
 import com.vdc.tv.models.UiText
 import com.vdc.tv.presentation.film.components.CollectionGrid
 import com.vdc.tv.presentation.theme.FindroidTheme
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyMovies
+import dev.jdtech.jellyfin.film.presentation.collection.CollectionAction
+import dev.jdtech.jellyfin.film.presentation.collection.CollectionState
+import dev.jdtech.jellyfin.film.presentation.collection.CollectionViewModel
+import dev.jdtech.jellyfin.models.CollectionSection
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.models.UiText
+import dev.jdtech.jellyfin.presentation.film.components.CollectionGrid
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @Composable

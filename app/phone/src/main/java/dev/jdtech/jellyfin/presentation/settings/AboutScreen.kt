@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.settings
+=======
+package dev.jdtech.jellyfin.presentation.settings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.widget.Toast
 import androidx.compose.foundation.Image
@@ -45,12 +49,21 @@ import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import com.mikepenz.aboutlibraries.ui.compose.android.produceLibraries
 import com.mikepenz.aboutlibraries.ui.compose.m3.LibrariesContainer
+<<<<<<< HEAD
 import com.vdc.tv.BuildConfig
 import com.vdc.tv.R
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.settings.R as SettingsR
+=======
+import dev.jdtech.jellyfin.BuildConfig
+import dev.jdtech.jellyfin.R
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.settings.R as SettingsR
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)

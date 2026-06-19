@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.utils
+=======
+package dev.jdtech.jellyfin.utils
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.DownloadManager
 import android.content.Context
@@ -10,6 +14,7 @@ import androidx.core.net.toUri
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.workDataOf
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.database.ServerDatabaseDao
 import com.vdc.tv.models.FindroidEpisode
@@ -32,6 +37,30 @@ import com.vdc.tv.models.toFindroidUserDataDto
 import com.vdc.tv.repository.JellyfinRepository
 import com.vdc.tv.settings.domain.AppPreferences
 import com.vdc.tv.work.ImagesDownloaderWorker
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.database.ServerDatabaseDao
+import dev.jdtech.jellyfin.models.FindroidEpisode
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.models.FindroidMovie
+import dev.jdtech.jellyfin.models.FindroidSource
+import dev.jdtech.jellyfin.models.FindroidSources
+import dev.jdtech.jellyfin.models.FindroidTrickplayInfo
+import dev.jdtech.jellyfin.models.UiText
+import dev.jdtech.jellyfin.models.toFindroidEpisodeDto
+import dev.jdtech.jellyfin.models.toFindroidMediaStreamDto
+import dev.jdtech.jellyfin.models.toFindroidMovieDto
+import dev.jdtech.jellyfin.models.toFindroidSeasonDto
+import dev.jdtech.jellyfin.models.toFindroidSegmentsDto
+import dev.jdtech.jellyfin.models.toFindroidShowDto
+import dev.jdtech.jellyfin.models.toFindroidSource
+import dev.jdtech.jellyfin.models.toFindroidSourceDto
+import dev.jdtech.jellyfin.models.toFindroidTrickplayInfoDto
+import dev.jdtech.jellyfin.models.toFindroidUserDataDto
+import dev.jdtech.jellyfin.repository.JellyfinRepository
+import dev.jdtech.jellyfin.settings.domain.AppPreferences
+import dev.jdtech.jellyfin.work.ImagesDownloaderWorker
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.io.File
 import java.util.UUID
 import kotlin.Exception

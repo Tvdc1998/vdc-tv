@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.users
+=======
+package dev.jdtech.jellyfin.presentation.setup.users
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -30,6 +34,7 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.OutlinedButton
 import androidx.tv.material3.Text
+<<<<<<< HEAD
 import com.vdc.tv.api.JellyfinApi
 import com.vdc.tv.core.presentation.dummy.dummyUsers
 import com.vdc.tv.presentation.setup.components.UserItem
@@ -41,6 +46,19 @@ import com.vdc.tv.setup.presentation.users.UsersEvent
 import com.vdc.tv.setup.presentation.users.UsersState
 import com.vdc.tv.setup.presentation.users.UsersViewModel
 import com.vdc.tv.utils.ObserveAsEvents
+=======
+import dev.jdtech.jellyfin.api.JellyfinApi
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyUsers
+import dev.jdtech.jellyfin.presentation.setup.components.UserItem
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.setup.R as SetupR
+import dev.jdtech.jellyfin.setup.presentation.users.UsersAction
+import dev.jdtech.jellyfin.setup.presentation.users.UsersEvent
+import dev.jdtech.jellyfin.setup.presentation.users.UsersState
+import dev.jdtech.jellyfin.setup.presentation.users.UsersViewModel
+import dev.jdtech.jellyfin.utils.ObserveAsEvents
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun UsersScreen(

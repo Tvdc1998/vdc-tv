@@ -46,4 +46,8 @@
     <string name="player_gestures_chapter_skip">Kapitelbevægelse</string>
     <string name="player_start_maximized">Start maksimeret</string>
     <string name="player_start_maximized_summary">Åben video i maksimeret tilstand som standard</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

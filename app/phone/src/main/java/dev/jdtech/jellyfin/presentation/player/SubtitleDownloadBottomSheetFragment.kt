@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.player
+=======
+package dev.jdtech.jellyfin.presentation.player
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,8 +14,13 @@ import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.fragment.app.activityViewModels
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
+<<<<<<< HEAD
 import com.vdc.tv.player.local.presentation.PlayerViewModel
 import com.vdc.tv.presentation.theme.FindroidTheme
+=======
+import dev.jdtech.jellyfin.player.local.presentation.PlayerViewModel
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @AndroidEntryPoint

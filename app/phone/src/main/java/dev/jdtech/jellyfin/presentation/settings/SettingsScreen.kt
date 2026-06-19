@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.settings
+=======
+package dev.jdtech.jellyfin.presentation.settings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.Activity
 import android.app.UiModeManager
@@ -34,6 +38,7 @@ import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.presentation.settings.components.SettingsGroupCard
 import com.vdc.tv.presentation.theme.FindroidTheme
@@ -49,6 +54,23 @@ import com.vdc.tv.settings.presentation.settings.SettingsState
 import com.vdc.tv.settings.presentation.settings.SettingsViewModel
 import com.vdc.tv.utils.ObserveAsEvents
 import com.vdc.tv.utils.restart
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.presentation.settings.components.SettingsGroupCard
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.presentation.utils.plus
+import dev.jdtech.jellyfin.settings.R as SettingsR
+import dev.jdtech.jellyfin.settings.presentation.enums.DeviceType
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceCategory
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceGroup
+import dev.jdtech.jellyfin.settings.presentation.settings.SettingsAction
+import dev.jdtech.jellyfin.settings.presentation.settings.SettingsEvent
+import dev.jdtech.jellyfin.settings.presentation.settings.SettingsState
+import dev.jdtech.jellyfin.settings.presentation.settings.SettingsViewModel
+import dev.jdtech.jellyfin.utils.ObserveAsEvents
+import dev.jdtech.jellyfin.utils.restart
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import timber.log.Timber
 
 @Composable

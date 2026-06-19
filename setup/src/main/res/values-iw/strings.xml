@@ -27,4 +27,8 @@
     <string name="add_server_address">הוסף כתובת שרת</string>
     <string name="remove_server_address">הסר כתובת שרת</string>
     <string name="remove_server_address_dialog_text">האם אתה בטוח שברצונך להסיר את כתובת השרת %1$s</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

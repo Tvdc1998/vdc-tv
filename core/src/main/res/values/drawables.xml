@@ -6,4 +6,8 @@
     <drawable name="exo_styled_controls_previous">@drawable/ic_skip_back</drawable>
     <drawable name="exo_styled_controls_simple_fastforward">@drawable/ic_fast_forward</drawable>
     <drawable name="exo_styled_controls_simple_rewind">@drawable/ic_rewind</drawable>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

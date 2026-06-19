@@ -54,4 +54,8 @@
     <string name="amoled_theme_summary">Использовать тему AMOLED с чистым чёрным фоном</string>
     <string name="offline_mode">Офлайн-Режим</string>
     <string name="app_language">Язык приложения</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

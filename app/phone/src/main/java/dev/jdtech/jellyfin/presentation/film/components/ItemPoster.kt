@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
+=======
+package dev.jdtech.jellyfin.presentation.film.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.net.Uri
 import androidx.compose.foundation.background
@@ -9,10 +13,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import coil3.compose.AsyncImage
+<<<<<<< HEAD
 import com.vdc.tv.film.presentation.library.LibraryViewType
 import com.vdc.tv.models.FindroidEpisode
 import com.vdc.tv.models.FindroidItem
 import com.vdc.tv.models.FindroidMovie
+=======
+import dev.jdtech.jellyfin.film.presentation.library.LibraryViewType
+import dev.jdtech.jellyfin.models.FindroidEpisode
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.models.FindroidMovie
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 enum class Direction {
     HORIZONTAL,

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.servers
+=======
+package dev.jdtech.jellyfin.presentation.setup.servers
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.view.KeyEvent
 import androidx.compose.foundation.layout.Arrangement
@@ -29,6 +33,7 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.OutlinedButton
 import androidx.tv.material3.Text
+<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyDiscoveredServer
 import com.vdc.tv.core.presentation.dummy.dummyServer
 import com.vdc.tv.models.Server
@@ -43,6 +48,22 @@ import com.vdc.tv.setup.presentation.servers.ServersEvent
 import com.vdc.tv.setup.presentation.servers.ServersState
 import com.vdc.tv.setup.presentation.servers.ServersViewModel
 import com.vdc.tv.utils.ObserveAsEvents
+=======
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyDiscoveredServer
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyServer
+import dev.jdtech.jellyfin.models.Server
+import dev.jdtech.jellyfin.models.ServerAddress
+import dev.jdtech.jellyfin.models.ServerWithAddresses
+import dev.jdtech.jellyfin.presentation.setup.components.ServerItem
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.setup.R as SetupR
+import dev.jdtech.jellyfin.setup.presentation.servers.ServersAction
+import dev.jdtech.jellyfin.setup.presentation.servers.ServersEvent
+import dev.jdtech.jellyfin.setup.presentation.servers.ServersState
+import dev.jdtech.jellyfin.setup.presentation.servers.ServersViewModel
+import dev.jdtech.jellyfin.utils.ObserveAsEvents
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @Composable

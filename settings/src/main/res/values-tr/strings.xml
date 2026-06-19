@@ -31,4 +31,8 @@
     <string name="settings_cache_size">Önbellek boyutu</string>
     <string name="player_gestures">Oynatıcı hareketleri</string>
     <string name="player_gestures_vb">Ses ve parlaklık hareketleri</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

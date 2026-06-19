@@ -50,4 +50,8 @@
     <string name="settings_request_timeout">Časový limit požadavku</string>
     <string name="title_download">Stažené</string>
     <string name="picture_in_picture">Obraz v obraze</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

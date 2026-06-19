@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
+=======
+package dev.jdtech.jellyfin.presentation.film.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -12,11 +16,19 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+<<<<<<< HEAD
 import com.vdc.tv.film.presentation.collection.CollectionAction
 import com.vdc.tv.models.CollectionSection
 import com.vdc.tv.models.FindroidEpisode
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.GridCellsAdaptiveWithMinColumns
+=======
+import dev.jdtech.jellyfin.film.presentation.collection.CollectionAction
+import dev.jdtech.jellyfin.models.CollectionSection
+import dev.jdtech.jellyfin.models.FindroidEpisode
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.presentation.utils.GridCellsAdaptiveWithMinColumns
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun CollectionGrid(

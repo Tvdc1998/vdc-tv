@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.welcome
+=======
+package dev.jdtech.jellyfin.presentation.setup.welcome
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -25,10 +29,17 @@ import androidx.tv.material3.Icon
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.OutlinedButton
 import androidx.tv.material3.Text
+<<<<<<< HEAD
 import com.vdc.tv.R
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.setup.presentation.welcome.WelcomeAction
+=======
+import dev.jdtech.jellyfin.R
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.setup.presentation.welcome.WelcomeAction
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun WelcomeScreen(onContinueClick: () -> Unit) {
@@ -63,19 +74,31 @@ private fun WelcomeScreenLayout(onAction: (WelcomeAction) -> Unit) {
             )
             Spacer(modifier = Modifier.height(MaterialTheme.spacings.medium))
             Text(
+<<<<<<< HEAD
                 text = stringResource(com.vdc.tv.setup.R.string.welcome),
+=======
+                text = stringResource(dev.jdtech.jellyfin.setup.R.string.welcome),
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 style = MaterialTheme.typography.displayMedium,
             )
             Spacer(modifier = Modifier.height(MaterialTheme.spacings.default))
             Text(
+<<<<<<< HEAD
                 text = stringResource(com.vdc.tv.setup.R.string.welcome_text),
+=======
+                text = stringResource(dev.jdtech.jellyfin.setup.R.string.welcome_text),
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 style = MaterialTheme.typography.bodyMedium,
                 textAlign = TextAlign.Center,
             )
             Spacer(modifier = Modifier.height(MaterialTheme.spacings.large))
             OutlinedButton(onClick = { onAction(WelcomeAction.OnLearnMoreClick) }) {
                 Text(
+<<<<<<< HEAD
                     text = stringResource(com.vdc.tv.setup.R.string.welcome_btn_learn_more)
+=======
+                    text = stringResource(dev.jdtech.jellyfin.setup.R.string.welcome_btn_learn_more)
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 )
             }
             Spacer(modifier = Modifier.height(MaterialTheme.spacings.medium))
@@ -83,7 +106,11 @@ private fun WelcomeScreenLayout(onAction: (WelcomeAction) -> Unit) {
                 onClick = { onAction(WelcomeAction.OnContinueClick) },
                 modifier = Modifier.focusRequester(focusRequester),
             ) {
+<<<<<<< HEAD
                 Text(text = stringResource(com.vdc.tv.setup.R.string.welcome_btn_continue))
+=======
+                Text(text = stringResource(dev.jdtech.jellyfin.setup.R.string.welcome_btn_continue))
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
             }
         }
     }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film
+=======
+package dev.jdtech.jellyfin.presentation.film
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -14,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.tv.material3.MaterialTheme
+<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyHomeSection
 import com.vdc.tv.core.presentation.dummy.dummyHomeSuggestions
 import com.vdc.tv.core.presentation.dummy.dummyHomeView
@@ -29,6 +34,23 @@ import com.vdc.tv.presentation.film.components.HomeSection
 import com.vdc.tv.presentation.film.components.HomeView
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
+=======
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyHomeSection
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyHomeSuggestions
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyHomeView
+import dev.jdtech.jellyfin.film.presentation.home.HomeAction
+import dev.jdtech.jellyfin.film.presentation.home.HomeState
+import dev.jdtech.jellyfin.film.presentation.home.HomeViewModel
+import dev.jdtech.jellyfin.film.presentation.library.LibraryViewType
+import dev.jdtech.jellyfin.models.FindroidEpisode
+import dev.jdtech.jellyfin.models.FindroidMovie
+import dev.jdtech.jellyfin.models.FindroidShow
+import dev.jdtech.jellyfin.presentation.film.components.HomeCarousel
+import dev.jdtech.jellyfin.presentation.film.components.HomeSection
+import dev.jdtech.jellyfin.presentation.film.components.HomeView
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import org.jellyfin.sdk.model.api.BaseItemKind
 

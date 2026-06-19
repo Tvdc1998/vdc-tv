@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.database
+=======
+package dev.jdtech.jellyfin.database
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.room.AutoMigration
 import androidx.room.Database
@@ -8,6 +12,7 @@ import androidx.room.TypeConverters
 import androidx.room.migration.AutoMigrationSpec
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
+<<<<<<< HEAD
 import com.vdc.tv.models.FindroidEpisodeDto
 import com.vdc.tv.models.FindroidMediaStreamDto
 import com.vdc.tv.models.FindroidMovieDto
@@ -20,6 +25,20 @@ import com.vdc.tv.models.FindroidUserDataDto
 import com.vdc.tv.models.Server
 import com.vdc.tv.models.ServerAddress
 import com.vdc.tv.models.User
+=======
+import dev.jdtech.jellyfin.models.FindroidEpisodeDto
+import dev.jdtech.jellyfin.models.FindroidMediaStreamDto
+import dev.jdtech.jellyfin.models.FindroidMovieDto
+import dev.jdtech.jellyfin.models.FindroidSeasonDto
+import dev.jdtech.jellyfin.models.FindroidSegmentDto
+import dev.jdtech.jellyfin.models.FindroidShowDto
+import dev.jdtech.jellyfin.models.FindroidSourceDto
+import dev.jdtech.jellyfin.models.FindroidTrickplayInfoDto
+import dev.jdtech.jellyfin.models.FindroidUserDataDto
+import dev.jdtech.jellyfin.models.Server
+import dev.jdtech.jellyfin.models.ServerAddress
+import dev.jdtech.jellyfin.models.User
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Database(
     entities =

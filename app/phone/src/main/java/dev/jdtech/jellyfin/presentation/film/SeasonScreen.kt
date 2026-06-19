@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film
+=======
+package dev.jdtech.jellyfin.presentation.film
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.Intent
 import androidx.compose.foundation.layout.Arrangement
@@ -34,6 +38,7 @@ import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+<<<<<<< HEAD
 import com.vdc.tv.PlayerActivity
 import com.vdc.tv.core.presentation.dummy.dummySeason
 import com.vdc.tv.film.presentation.season.SeasonAction
@@ -49,6 +54,23 @@ import com.vdc.tv.presentation.film.components.ItemTopBar
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.rememberSafePadding
+=======
+import dev.jdtech.jellyfin.PlayerActivity
+import dev.jdtech.jellyfin.core.presentation.dummy.dummySeason
+import dev.jdtech.jellyfin.film.presentation.season.SeasonAction
+import dev.jdtech.jellyfin.film.presentation.season.SeasonState
+import dev.jdtech.jellyfin.film.presentation.season.SeasonViewModel
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.presentation.film.components.Direction
+import dev.jdtech.jellyfin.presentation.film.components.EpisodeCard
+import dev.jdtech.jellyfin.presentation.film.components.ItemButtonsBar
+import dev.jdtech.jellyfin.presentation.film.components.ItemHeader
+import dev.jdtech.jellyfin.presentation.film.components.ItemPoster
+import dev.jdtech.jellyfin.presentation.film.components.ItemTopBar
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.presentation.utils.rememberSafePadding
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import org.jellyfin.sdk.model.api.BaseItemKind
 

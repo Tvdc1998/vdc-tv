@@ -68,4 +68,8 @@
     <string name="pref_player_gestures_seek_trickplay_summary">Előnézeti képek megjelenítése keresési gesztusra</string>
     <string name="trickplay">Előnézet</string>
     <string name="pref_player_gestures_seek_trickplay">Előnézet a keresési gesztuson</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
+=======
+package dev.jdtech.jellyfin.presentation.film.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.interaction.collectIsDraggedAsState
 import androidx.compose.foundation.layout.PaddingValues
@@ -12,11 +16,19 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
+<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyMovies
 import com.vdc.tv.film.presentation.home.HomeAction
 import com.vdc.tv.models.FindroidItem
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
+=======
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyMovies
+import dev.jdtech.jellyfin.film.presentation.home.HomeAction
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import kotlinx.coroutines.delay
 
 private val dynamicPageSize =

@@ -2,4 +2,8 @@
 <resources>
     <string name="jellyfin_banner">Jellyfin横幅</string>
     <string name="app_description">第三方原生Jellyfin应用程式</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

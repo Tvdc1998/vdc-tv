@@ -26,4 +26,8 @@
     <string name="addresses">Adresler</string>
     <string name="remove_server_address">Sunucu adresini kaldır</string>
     <string name="remove_server_address_dialog_text">%1$s sunucu adresini kaldırmak istediğinizden emin misiniz</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

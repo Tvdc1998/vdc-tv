@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 package com.vdc.tv.setup.presentation.servers
+=======
+package dev.jdtech.jellyfin.setup.presentation.servers
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+<<<<<<< HEAD
 import com.vdc.tv.settings.domain.AppPreferences
 import com.vdc.tv.setup.domain.SetupRepository
+=======
+import dev.jdtech.jellyfin.settings.domain.AppPreferences
+import dev.jdtech.jellyfin.setup.domain.SetupRepository
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import javax.inject.Inject
 import kotlinx.coroutines.channels.Channel

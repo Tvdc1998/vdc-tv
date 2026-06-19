@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.theme
 
 import androidx.compose.material3.darkColorScheme
@@ -5,6 +6,15 @@ import androidx.tv.material3.darkColorScheme as darkColorSchemeTv
 import com.vdc.tv.core.presentation.theme.ColorDark
 import com.vdc.tv.core.presentation.theme.ColorPinkDark
 import com.vdc.tv.core.presentation.theme.ColorPurpleDark
+=======
+package dev.jdtech.jellyfin.presentation.theme
+
+import androidx.compose.material3.darkColorScheme
+import androidx.tv.material3.darkColorScheme as darkColorSchemeTv
+import dev.jdtech.jellyfin.core.presentation.theme.ColorDark
+import dev.jdtech.jellyfin.core.presentation.theme.ColorPinkDark
+import dev.jdtech.jellyfin.core.presentation.theme.ColorPurpleDark
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 val darkScheme =
     darkColorScheme(

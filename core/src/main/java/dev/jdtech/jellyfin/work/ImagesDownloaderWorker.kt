@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.work
+=======
+package dev.jdtech.jellyfin.work
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.Context
 import androidx.hilt.work.HiltWorker
@@ -6,7 +10,11 @@ import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
+<<<<<<< HEAD
 import com.vdc.tv.repository.JellyfinRepository
+=======
+import dev.jdtech.jellyfin.repository.JellyfinRepository
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.io.File
 import java.io.IOException
 import java.util.UUID

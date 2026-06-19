@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.settings.components
+=======
+package dev.jdtech.jellyfin.presentation.settings.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.Intent
 import android.os.Build
@@ -21,8 +25,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.core.net.toUri
+<<<<<<< HEAD
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.settings.presentation.models.Preference
+=======
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.settings.presentation.models.Preference
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun SettingsAppLanguageCard(preference: Preference, modifier: Modifier = Modifier) {

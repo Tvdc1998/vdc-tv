@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv
+=======
+package dev.jdtech.jellyfin
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.os.Bundle
 import android.view.View
@@ -9,7 +13,11 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.updatePadding
 import androidx.media3.session.MediaSession
+<<<<<<< HEAD
 import com.vdc.tv.player.local.presentation.PlayerViewModel
+=======
+import dev.jdtech.jellyfin.player.local.presentation.PlayerViewModel
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 abstract class BasePlayerActivity : AppCompatActivity() {
 

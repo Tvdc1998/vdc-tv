@@ -26,4 +26,8 @@
     <locale android:name="yue"/> <!-- Yue Chinese -->
     <locale android:name="zh-CN"/> <!-- Chinese (Simplified) -->
     <locale android:name="zh-TW"/> <!-- Chinese (Traditional) -->
+<<<<<<< HEAD
 </locale-config>
+=======
+</locale-config>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

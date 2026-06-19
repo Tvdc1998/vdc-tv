@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film
+=======
+package dev.jdtech.jellyfin.presentation.film
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.view.KeyEvent
 import android.widget.Toast
@@ -56,6 +60,7 @@ import androidx.tv.material3.LocalContentColor
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
 import coil3.compose.AsyncImage
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyEpisode
 import com.vdc.tv.core.presentation.dummy.dummyShow
@@ -69,6 +74,21 @@ import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.ui.components.Direction
 import com.vdc.tv.ui.components.ItemCard
 import com.vdc.tv.utils.getShowDateString
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyEpisode
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyShow
+import dev.jdtech.jellyfin.core.presentation.theme.Yellow
+import dev.jdtech.jellyfin.film.presentation.show.ShowAction
+import dev.jdtech.jellyfin.film.presentation.show.ShowState
+import dev.jdtech.jellyfin.film.presentation.show.ShowViewModel
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.ui.components.Direction
+import dev.jdtech.jellyfin.ui.components.ItemCard
+import dev.jdtech.jellyfin.utils.getShowDateString
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @Composable

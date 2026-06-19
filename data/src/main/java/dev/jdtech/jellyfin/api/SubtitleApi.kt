@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 package com.vdc.tv.api
 
 import com.vdc.tv.models.RemoteSubtitleDto
+=======
+package dev.jdtech.jellyfin.api
+
+import dev.jdtech.jellyfin.models.RemoteSubtitleDto
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

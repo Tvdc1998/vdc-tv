@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.settings.presentation.settings
+=======
+package dev.jdtech.jellyfin.settings.presentation.settings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.Intent
 import android.os.Build
@@ -6,6 +10,7 @@ import android.provider.Settings
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+<<<<<<< HEAD
 import com.vdc.tv.settings.R
 import com.vdc.tv.settings.domain.AppPreferences
 import com.vdc.tv.settings.presentation.enums.DeviceType
@@ -17,6 +22,19 @@ import com.vdc.tv.settings.presentation.models.PreferenceLongInput
 import com.vdc.tv.settings.presentation.models.PreferenceMultiSelect
 import com.vdc.tv.settings.presentation.models.PreferenceSelect
 import com.vdc.tv.settings.presentation.models.PreferenceSwitch
+=======
+import dev.jdtech.jellyfin.settings.R
+import dev.jdtech.jellyfin.settings.domain.AppPreferences
+import dev.jdtech.jellyfin.settings.presentation.enums.DeviceType
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceAppLanguage
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceCategory
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceGroup
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceIntInput
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceLongInput
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceMultiSelect
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceSelect
+import dev.jdtech.jellyfin.settings.presentation.models.PreferenceSwitch
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import javax.inject.Inject
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film
+=======
+package dev.jdtech.jellyfin.presentation.film
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -39,6 +43,7 @@ import androidx.paging.LoadState
 import androidx.paging.PagingData
 import androidx.paging.compose.collectAsLazyPagingItems
 import androidx.paging.compose.itemKey
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyMovies
 import com.vdc.tv.film.presentation.library.LibraryAction
@@ -57,6 +62,26 @@ import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.GridCellsAdaptiveWithMinColumns
 import com.vdc.tv.presentation.utils.plus
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.core.presentation.dummy.dummyMovies
+import dev.jdtech.jellyfin.film.presentation.library.LibraryAction
+import dev.jdtech.jellyfin.film.presentation.library.LibraryState
+import dev.jdtech.jellyfin.film.presentation.library.LibraryViewType
+import dev.jdtech.jellyfin.film.presentation.library.LibraryViewModel
+import dev.jdtech.jellyfin.models.CollectionType
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.presentation.components.ErrorDialog
+import dev.jdtech.jellyfin.presentation.film.components.Direction
+import dev.jdtech.jellyfin.presentation.film.components.ErrorCard
+import dev.jdtech.jellyfin.presentation.film.components.GenreDialog
+import dev.jdtech.jellyfin.presentation.film.components.ItemCard
+import dev.jdtech.jellyfin.presentation.film.components.SortByDialog
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+import dev.jdtech.jellyfin.presentation.utils.GridCellsAdaptiveWithMinColumns
+import dev.jdtech.jellyfin.presentation.utils.plus
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import org.jellyfin.sdk.model.api.ItemFilter
 import java.util.UUID
 import kotlinx.coroutines.flow.Flow

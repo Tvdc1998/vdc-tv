@@ -68,4 +68,8 @@
     <string name="pref_player_gestures_seek_trickplay">Trickplay pri navigačnom geste</string>
     <string name="trickplay">Trickplay</string>
     <string name="pref_player_gestures_seek_trickplay_summary">Zobraz náhľadových obrázkov pri navigačnom geste</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.addserver
+=======
+package dev.jdtech.jellyfin.presentation.setup.addserver
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -42,6 +46,7 @@ import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.presentation.setup.components.DiscoveredServerItem
 import com.vdc.tv.presentation.setup.components.LoadingButton
@@ -53,6 +58,19 @@ import com.vdc.tv.setup.presentation.addserver.AddServerEvent
 import com.vdc.tv.setup.presentation.addserver.AddServerState
 import com.vdc.tv.setup.presentation.addserver.AddServerViewModel
 import com.vdc.tv.utils.ObserveAsEvents
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.presentation.setup.components.DiscoveredServerItem
+import dev.jdtech.jellyfin.presentation.setup.components.LoadingButton
+import dev.jdtech.jellyfin.presentation.setup.components.RootLayout
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.setup.R as SetupR
+import dev.jdtech.jellyfin.setup.presentation.addserver.AddServerAction
+import dev.jdtech.jellyfin.setup.presentation.addserver.AddServerEvent
+import dev.jdtech.jellyfin.setup.presentation.addserver.AddServerState
+import dev.jdtech.jellyfin.setup.presentation.addserver.AddServerViewModel
+import dev.jdtech.jellyfin.utils.ObserveAsEvents
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun AddServerScreen(

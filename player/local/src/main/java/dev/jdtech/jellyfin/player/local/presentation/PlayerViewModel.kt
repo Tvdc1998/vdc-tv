@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.player.local.presentation
+=======
+package dev.jdtech.jellyfin.player.local.presentation
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.Application
 import android.graphics.Bitmap
@@ -18,6 +22,7 @@ import androidx.media3.exoplayer.DefaultRenderersFactory
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.trackselection.DefaultTrackSelector
 import dagger.hilt.android.lifecycle.HiltViewModel
+<<<<<<< HEAD
 import com.vdc.tv.models.FindroidSegment
 import com.vdc.tv.models.FindroidSegmentType
 import com.vdc.tv.player.core.domain.models.ExternalSubtitle
@@ -30,6 +35,20 @@ import com.vdc.tv.player.local.mpv.MPVPlayer
 import com.vdc.tv.repository.JellyfinRepository
 import com.vdc.tv.settings.domain.AppPreferences
 import com.vdc.tv.settings.domain.Constants
+=======
+import dev.jdtech.jellyfin.models.FindroidSegment
+import dev.jdtech.jellyfin.models.FindroidSegmentType
+import dev.jdtech.jellyfin.player.core.domain.models.ExternalSubtitle
+import dev.jdtech.jellyfin.player.core.domain.models.PlayerChapter
+import dev.jdtech.jellyfin.player.core.domain.models.PlayerItem
+import dev.jdtech.jellyfin.player.core.domain.models.Trickplay
+import dev.jdtech.jellyfin.player.local.R
+import dev.jdtech.jellyfin.player.local.domain.PlaylistManager
+import dev.jdtech.jellyfin.player.local.mpv.MPVPlayer
+import dev.jdtech.jellyfin.repository.JellyfinRepository
+import dev.jdtech.jellyfin.settings.domain.AppPreferences
+import dev.jdtech.jellyfin.settings.domain.Constants
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import javax.inject.Inject
 import kotlin.math.ceil

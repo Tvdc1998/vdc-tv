@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.ui.dialogs
+=======
+package dev.jdtech.jellyfin.ui.dialogs
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.os.Parcelable
 import androidx.compose.foundation.BorderStroke
@@ -28,11 +32,19 @@ import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.RadioButton
 import androidx.tv.material3.Surface
 import androidx.tv.material3.Text
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.player.core.domain.models.Track
 import com.vdc.tv.player.local.R as PlayerLocalR
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.player.core.domain.models.Track
+import dev.jdtech.jellyfin.player.local.R as PlayerLocalR
+import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
+import dev.jdtech.jellyfin.presentation.theme.spacings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

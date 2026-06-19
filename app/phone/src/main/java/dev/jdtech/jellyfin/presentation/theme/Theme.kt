@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.theme
+=======
+package dev.jdtech.jellyfin.presentation.theme
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -10,7 +14,11 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.platform.LocalContext
+<<<<<<< HEAD
 import com.vdc.tv.core.presentation.theme.Spacings
+=======
+import dev.jdtech.jellyfin.core.presentation.theme.Spacings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun FindroidTheme(

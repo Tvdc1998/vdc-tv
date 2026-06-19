@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
+=======
+package dev.jdtech.jellyfin.presentation.film.components
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -20,6 +24,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.film.R as FilmR
 import com.vdc.tv.film.presentation.home.HomeAction
@@ -27,6 +32,15 @@ import com.vdc.tv.models.FindroidCollection
 import com.vdc.tv.models.FindroidImages
 import com.vdc.tv.models.HomeItem
 import com.vdc.tv.presentation.theme.spacings
+=======
+import dev.jdtech.jellyfin.core.R as CoreR
+import dev.jdtech.jellyfin.film.R as FilmR
+import dev.jdtech.jellyfin.film.presentation.home.HomeAction
+import dev.jdtech.jellyfin.models.FindroidCollection
+import dev.jdtech.jellyfin.models.FindroidImages
+import dev.jdtech.jellyfin.models.HomeItem
+import dev.jdtech.jellyfin.presentation.theme.spacings
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun HomeView(

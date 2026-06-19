@@ -8,4 +8,8 @@
     <item name="collection_columns" type="integer">2</item>
     <item name="library_columns" type="integer">2</item>
     <dimen name="person_detail_overview_height">72dp</dimen>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

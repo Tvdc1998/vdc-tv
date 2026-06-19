@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.core.presentation.downloader
+=======
+package dev.jdtech.jellyfin.core.presentation.downloader
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.DownloadManager
 import android.os.Handler
@@ -6,10 +10,17 @@ import android.os.Looper
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+<<<<<<< HEAD
 import com.vdc.tv.models.FindroidItem
 import com.vdc.tv.models.FindroidSourceType
 import com.vdc.tv.models.isDownloading
 import com.vdc.tv.utils.Downloader
+=======
+import dev.jdtech.jellyfin.models.FindroidItem
+import dev.jdtech.jellyfin.models.FindroidSourceType
+import dev.jdtech.jellyfin.models.isDownloading
+import dev.jdtech.jellyfin.utils.Downloader
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import javax.inject.Inject
 import kotlinx.coroutines.Runnable
 import kotlinx.coroutines.channels.Channel

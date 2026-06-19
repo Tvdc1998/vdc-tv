@@ -27,4 +27,8 @@
     <string name="add_server_address">Thêm địa chỉ máy chủ</string>
     <string name="remove_server_address">Xoá địa chỉ máy chủ</string>
     <string name="remove_server_address_dialog_text">Bạn có chắc chắn muốn xoá địa chỉ máy chủ %1$s không</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

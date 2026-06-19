@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv
+=======
+package dev.jdtech.jellyfin
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.Application
 import android.os.Build
@@ -16,7 +20,11 @@ import coil3.request.CachePolicy
 import coil3.request.crossfade
 import coil3.svg.SvgDecoder
 import dagger.hilt.android.HiltAndroidApp
+<<<<<<< HEAD
 import com.vdc.tv.settings.domain.AppPreferences
+=======
+import dev.jdtech.jellyfin.settings.domain.AppPreferences
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import javax.inject.Inject
 import kotlin.time.ExperimentalTime
 import okio.Path.Companion.toOkioPath

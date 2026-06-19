@@ -56,4 +56,8 @@
     <string name="app_language">שפת היישומון</string>
     <string name="picture_in_picture">תמונה-בתוך-תמונה</string>
     <string name="picture_in_picture_gesture_summary">השתמש בכפתור הבית או במחווה כדי להכנס למצב תמונה-בתוך-תמונה כאשר הוידאו פועל</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

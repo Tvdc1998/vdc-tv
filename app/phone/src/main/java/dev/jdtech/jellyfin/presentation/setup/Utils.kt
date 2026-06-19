@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.vdc.tv.presentation.setup
+=======
+package dev.jdtech.jellyfin.presentation.setup
+>>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
