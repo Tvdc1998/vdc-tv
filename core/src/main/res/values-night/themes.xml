@@ -25,8 +25,4 @@
         <item name="colorSurfaceContainerLow">?attr/colorSurface</item>
         <item name="colorSurfaceContainerHigh">?attr/colorSurface</item>
     </style>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

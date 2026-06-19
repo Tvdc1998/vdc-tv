@@ -2,8 +2,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
     <solid android:color="?attr/colorPrimary" />
-<<<<<<< HEAD
 </shape>
-=======
-</shape>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

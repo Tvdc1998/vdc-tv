@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
-=======
-package dev.jdtech.jellyfin.presentation.film.components
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.DownloadManager
 import android.os.Environment
@@ -33,7 +29,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.window.core.layout.WindowSizeClass
-<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.downloader.DownloaderState
 import com.vdc.tv.core.presentation.dummy.dummyEpisode
@@ -43,17 +38,6 @@ import com.vdc.tv.models.FindroidShow
 import com.vdc.tv.models.isDownloaded
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
-=======
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.core.presentation.downloader.DownloaderState
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyEpisode
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.FindroidMovie
-import dev.jdtech.jellyfin.models.FindroidShow
-import dev.jdtech.jellyfin.models.isDownloaded
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun ItemButtonsBar(

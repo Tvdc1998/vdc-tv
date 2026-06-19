@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
-=======
-package dev.jdtech.jellyfin.presentation.film.components
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateContentSize
@@ -37,21 +33,12 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-<<<<<<< HEAD
 import com.vdc.tv.api.JellyfinApi
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.models.User
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.LocalOfflineMode
-=======
-import dev.jdtech.jellyfin.api.JellyfinApi
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.models.User
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.presentation.utils.LocalOfflineMode
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import org.jellyfin.sdk.model.api.ImageType
 
 @Composable

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.vdc.tv.setup.data
 
 import com.vdc.tv.api.JellyfinApi
@@ -14,23 +13,6 @@ import com.vdc.tv.models.User
 import com.vdc.tv.settings.domain.AppPreferences
 import com.vdc.tv.setup.R as SetupR
 import com.vdc.tv.setup.domain.SetupRepository
-=======
-package dev.jdtech.jellyfin.setup.data
-
-import dev.jdtech.jellyfin.api.JellyfinApi
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.database.ServerDatabaseDao
-import dev.jdtech.jellyfin.models.ExceptionUiText
-import dev.jdtech.jellyfin.models.ExceptionUiTexts
-import dev.jdtech.jellyfin.models.Server
-import dev.jdtech.jellyfin.models.ServerAddress
-import dev.jdtech.jellyfin.models.ServerWithAddresses
-import dev.jdtech.jellyfin.models.UiText
-import dev.jdtech.jellyfin.models.User
-import dev.jdtech.jellyfin.settings.domain.AppPreferences
-import dev.jdtech.jellyfin.setup.R as SetupR
-import dev.jdtech.jellyfin.setup.domain.SetupRepository
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

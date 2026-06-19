@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.ui.components.player
-=======
-package dev.jdtech.jellyfin.ui.components.player
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.annotation.IntRange
 import androidx.compose.runtime.Composable

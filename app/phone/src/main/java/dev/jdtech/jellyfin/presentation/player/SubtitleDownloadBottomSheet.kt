@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.player
-=======
-package dev.jdtech.jellyfin.presentation.player
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.widget.Toast
 import androidx.compose.foundation.clickable
@@ -41,21 +37,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-<<<<<<< HEAD
 import com.vdc.tv.core.R
 import com.vdc.tv.core.presentation.subtitles.SubtitlesAction
 import com.vdc.tv.core.presentation.subtitles.SubtitlesEvent
 import com.vdc.tv.core.presentation.subtitles.SubtitlesViewModel
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.utils.ObserveAsEvents
-=======
-import dev.jdtech.jellyfin.core.R
-import dev.jdtech.jellyfin.core.presentation.subtitles.SubtitlesAction
-import dev.jdtech.jellyfin.core.presentation.subtitles.SubtitlesEvent
-import dev.jdtech.jellyfin.core.presentation.subtitles.SubtitlesViewModel
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.utils.ObserveAsEvents
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -121,13 +108,8 @@ fun SubtitleDownloadBottomSheet(
 
             if (showingLanguageList) {
                 LanguageList(
-<<<<<<< HEAD
                     languages = context.resources.getStringArray(com.vdc.tv.settings.R.array.languages).toList(),
                     languageValues = context.resources.getStringArray(com.vdc.tv.settings.R.array.languages_values).toList(),
-=======
-                    languages = context.resources.getStringArray(dev.jdtech.jellyfin.settings.R.array.languages).toList(),
-                    languageValues = context.resources.getStringArray(dev.jdtech.jellyfin.settings.R.array.languages_values).toList(),
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                     onLanguageClick = { 
                         viewModel.onAction(SubtitlesAction.OnLanguageSelected(it))
                         showingLanguageList = false
@@ -194,15 +176,9 @@ private fun LanguageList(
 
 @Composable
 private fun SubtitleList(
-<<<<<<< HEAD
     subtitles: List<com.vdc.tv.models.RemoteSubtitleDto>,
     isLoading: Boolean,
     onSubtitleClick: (com.vdc.tv.models.RemoteSubtitleDto) -> Unit,
-=======
-    subtitles: List<dev.jdtech.jellyfin.models.RemoteSubtitleDto>,
-    isLoading: Boolean,
-    onSubtitleClick: (dev.jdtech.jellyfin.models.RemoteSubtitleDto) -> Unit,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
     error: String? = null,
     onRetryClick: () -> Unit = {}
 ) {

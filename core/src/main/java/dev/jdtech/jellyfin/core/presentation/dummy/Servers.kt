@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 package com.vdc.tv.core.presentation.dummy
 
 import com.vdc.tv.models.DiscoveredServer
 import com.vdc.tv.models.Server
 import com.vdc.tv.models.ServerAddress
-=======
-package dev.jdtech.jellyfin.core.presentation.dummy
-
-import dev.jdtech.jellyfin.models.DiscoveredServer
-import dev.jdtech.jellyfin.models.Server
-import dev.jdtech.jellyfin.models.ServerAddress
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 val dummyDiscoveredServer =

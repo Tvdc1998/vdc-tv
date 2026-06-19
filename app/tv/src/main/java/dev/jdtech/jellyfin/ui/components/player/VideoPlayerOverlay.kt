@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.ui.components.player
-=======
-package dev.jdtech.jellyfin.ui.components.player
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -26,13 +22,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.tv.material3.MaterialTheme
-<<<<<<< HEAD
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
-=======
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun VideoPlayerOverlay(

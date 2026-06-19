@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film
-=======
-package dev.jdtech.jellyfin.presentation.film
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.layout.Arrangement
@@ -29,7 +25,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.window.core.layout.WindowSizeClass
-<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyCollections
 import com.vdc.tv.film.presentation.media.MediaAction
 import com.vdc.tv.film.presentation.media.MediaState
@@ -47,25 +42,6 @@ import com.vdc.tv.presentation.film.components.ItemCard
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.rememberSafePadding
-=======
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyCollections
-import dev.jdtech.jellyfin.film.presentation.media.MediaAction
-import dev.jdtech.jellyfin.film.presentation.media.MediaState
-import dev.jdtech.jellyfin.film.presentation.media.MediaViewModel
-import dev.jdtech.jellyfin.film.presentation.search.SearchAction
-import dev.jdtech.jellyfin.film.presentation.search.SearchState
-import dev.jdtech.jellyfin.film.presentation.search.SearchViewModel
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.presentation.components.ErrorDialog
-import dev.jdtech.jellyfin.presentation.film.components.Direction
-import dev.jdtech.jellyfin.presentation.film.components.ErrorCard
-import dev.jdtech.jellyfin.presentation.film.components.FavoritesCard
-import dev.jdtech.jellyfin.presentation.film.components.FilmSearchBar
-import dev.jdtech.jellyfin.presentation.film.components.ItemCard
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.presentation.utils.rememberSafePadding
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun MediaScreen(

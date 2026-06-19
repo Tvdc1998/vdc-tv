@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
-=======
-package dev.jdtech.jellyfin.presentation.film.components
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

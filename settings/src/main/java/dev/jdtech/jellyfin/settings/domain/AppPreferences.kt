@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 package com.vdc.tv.settings.domain
 
 import android.content.SharedPreferences
 import com.vdc.tv.settings.domain.models.Preference
-=======
-package dev.jdtech.jellyfin.settings.domain
-
-import android.content.SharedPreferences
-import dev.jdtech.jellyfin.settings.domain.models.Preference
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import javax.inject.Inject
 import timber.log.Timber
 

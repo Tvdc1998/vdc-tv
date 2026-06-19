@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.player
-=======
-package dev.jdtech.jellyfin.presentation.player
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.Dialog
 import android.os.Bundle
@@ -11,13 +7,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-<<<<<<< HEAD
 import com.vdc.tv.player.local.R
 import com.vdc.tv.player.local.presentation.PlayerViewModel
-=======
-import dev.jdtech.jellyfin.player.local.R
-import dev.jdtech.jellyfin.player.local.presentation.PlayerViewModel
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.lang.IllegalStateException
 
 class SpeedSelectionDialogFragment(private val viewModel: PlayerViewModel) : DialogFragment() {

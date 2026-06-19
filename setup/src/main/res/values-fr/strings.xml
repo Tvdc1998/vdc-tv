@@ -29,12 +29,8 @@
    <string name="add_server_address">Ajouter l\'adresse d\'un serveur</string>
    <string name="remove_server_address">Supprimer l\'adresse du serveur</string>
    <string name="remove_server_address_dialog_text">Êtes vous sûr de vouloir retirer le serveur à l\'adresse %1$s</string>
-<<<<<<< HEAD
    <string name="welcome">Bienvenue sur VdC TV</string>
    <string name="welcome_btn_continue">Continuer</string>
    <string name="welcome_btn_learn_more">En savoir plus sur Jellyfin</string>
    <string name="welcome_text">VdC TV est un client Jellyfin de VdC studios. Connectez-vous avec votre serveur Jellyfin pour commencer.</string>
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

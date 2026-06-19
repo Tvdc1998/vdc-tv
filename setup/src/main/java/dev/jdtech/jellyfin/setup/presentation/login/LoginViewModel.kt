@@ -1,23 +1,12 @@
-<<<<<<< HEAD
 package com.vdc.tv.setup.presentation.login
-=======
-package dev.jdtech.jellyfin.setup.presentation.login
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.models.UiText
 import com.vdc.tv.setup.R as SetupR
 import com.vdc.tv.setup.domain.SetupRepository
-=======
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.models.UiText
-import dev.jdtech.jellyfin.setup.R as SetupR
-import dev.jdtech.jellyfin.setup.domain.SetupRepository
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import javax.inject.Inject
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.channels.Channel

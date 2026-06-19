@@ -68,8 +68,4 @@
     <string name="player_gestures_chapter_skip_summary">왼쪽/오른쪽을 길게 눌러 챕터 건너뛰기 (2배속 제스처는 비활성화)</string>
     <string name="pref_player_chapter_markers">챕터 마커</string>
     <string name="pref_player_chapter_markers_summary">시간 표시줄에 챕터 마커 표시</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

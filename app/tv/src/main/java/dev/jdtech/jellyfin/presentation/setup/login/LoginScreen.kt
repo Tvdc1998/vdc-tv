@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.login
-=======
-package dev.jdtech.jellyfin.presentation.setup.login
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Box
@@ -48,7 +44,6 @@ import androidx.tv.material3.LocalContentColor
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.OutlinedButton
 import androidx.tv.material3.Text
-<<<<<<< HEAD
 import com.vdc.tv.core.R
 import com.vdc.tv.models.UiText
 import com.vdc.tv.presentation.theme.FindroidTheme
@@ -58,17 +53,6 @@ import com.vdc.tv.setup.presentation.login.LoginEvent
 import com.vdc.tv.setup.presentation.login.LoginState
 import com.vdc.tv.setup.presentation.login.LoginViewModel
 import com.vdc.tv.utils.ObserveAsEvents
-=======
-import dev.jdtech.jellyfin.core.R
-import dev.jdtech.jellyfin.models.UiText
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.setup.presentation.login.LoginAction
-import dev.jdtech.jellyfin.setup.presentation.login.LoginEvent
-import dev.jdtech.jellyfin.setup.presentation.login.LoginState
-import dev.jdtech.jellyfin.setup.presentation.login.LoginViewModel
-import dev.jdtech.jellyfin.utils.ObserveAsEvents
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun LoginScreen(
@@ -128,22 +112,14 @@ private fun LoginScreenLayout(
             modifier = Modifier.fillMaxWidth().align(Alignment.Center),
         ) {
             Text(
-<<<<<<< HEAD
                 text = stringResource(id = com.vdc.tv.setup.R.string.login),
-=======
-                text = stringResource(id = dev.jdtech.jellyfin.setup.R.string.login),
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 style = MaterialTheme.typography.displayMedium,
             )
             Spacer(modifier = Modifier.height(MaterialTheme.spacings.small))
             Text(
                 text =
                     stringResource(
-<<<<<<< HEAD
                         com.vdc.tv.setup.R.string.server_subtitle,
-=======
-                        dev.jdtech.jellyfin.setup.R.string.server_subtitle,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                         state.serverName ?: "",
                     ),
                 style = MaterialTheme.typography.titleMedium,
@@ -162,11 +138,7 @@ private fun LoginScreenLayout(
                     Text(
                         text =
                             stringResource(
-<<<<<<< HEAD
                                 id = com.vdc.tv.setup.R.string.edit_text_username_hint
-=======
-                                id = dev.jdtech.jellyfin.setup.R.string.edit_text_username_hint
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                             )
                     )
                 },
@@ -195,11 +167,7 @@ private fun LoginScreenLayout(
                     Text(
                         text =
                             stringResource(
-<<<<<<< HEAD
                                 id = com.vdc.tv.setup.R.string.edit_text_password_hint
-=======
-                                id = dev.jdtech.jellyfin.setup.R.string.edit_text_password_hint
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                             )
                     )
                 },
@@ -241,11 +209,7 @@ private fun LoginScreenLayout(
                         Text(
                             text =
                                 stringResource(
-<<<<<<< HEAD
                                     id = com.vdc.tv.setup.R.string.login_btn_login
-=======
-                                    id = dev.jdtech.jellyfin.setup.R.string.login_btn_login
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                                 ),
                             modifier = Modifier.align(Alignment.Center),
                         )
@@ -263,11 +227,7 @@ private fun LoginScreenLayout(
                             modifier = Modifier.weight(1f).padding(horizontal = 12.dp)
                         )
                         Text(
-<<<<<<< HEAD
                             text = stringResource(com.vdc.tv.setup.R.string.or),
-=======
-                            text = stringResource(dev.jdtech.jellyfin.setup.R.string.or),
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                             color = DividerDefaults.color,
                             style = MaterialTheme.typography.bodySmall,
                         )
@@ -294,11 +254,7 @@ private fun LoginScreenLayout(
                                             state.quickConnectCode!!
                                         } else {
                                             stringResource(
-<<<<<<< HEAD
                                                 com.vdc.tv.setup.R.string
-=======
-                                                dev.jdtech.jellyfin.setup.R.string
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                                                     .login_btn_quick_connect
                                             )
                                         },

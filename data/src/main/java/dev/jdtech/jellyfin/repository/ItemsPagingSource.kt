@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.vdc.tv.repository
 
 import androidx.paging.PagingSource
@@ -6,15 +5,6 @@ import androidx.paging.PagingState
 import com.vdc.tv.models.FindroidItem
 import com.vdc.tv.models.SortBy
 import com.vdc.tv.models.SortOrder
-=======
-package dev.jdtech.jellyfin.repository
-
-import androidx.paging.PagingSource
-import androidx.paging.PagingState
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.SortBy
-import dev.jdtech.jellyfin.models.SortOrder
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import org.jellyfin.sdk.model.api.ItemFilter
 import java.util.UUID
 import org.jellyfin.sdk.model.api.BaseItemKind

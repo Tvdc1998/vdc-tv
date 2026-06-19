@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
-=======
-package dev.jdtech.jellyfin.presentation.film.components
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
@@ -30,7 +26,6 @@ import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Surface
 import androidx.tv.material3.Text
 import coil3.compose.AsyncImage
-<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyMovie
 import com.vdc.tv.film.presentation.home.HomeAction
 import com.vdc.tv.models.FindroidItem
@@ -38,15 +33,6 @@ import com.vdc.tv.models.FindroidMovie
 import com.vdc.tv.models.FindroidShow
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
-=======
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyMovie
-import dev.jdtech.jellyfin.film.presentation.home.HomeAction
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.FindroidMovie
-import dev.jdtech.jellyfin.models.FindroidShow
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun HomeCarouselItem(item: FindroidItem, onAction: (HomeAction) -> Unit) {

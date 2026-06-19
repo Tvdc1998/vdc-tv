@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.ui
-=======
-package dev.jdtech.jellyfin.ui
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -41,7 +37,6 @@ import androidx.tv.material3.TabDefaults
 import androidx.tv.material3.TabRow
 import androidx.tv.material3.TabRowDefaults
 import androidx.tv.material3.Text
-<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyServer
 import com.vdc.tv.core.presentation.dummy.dummyUser
@@ -55,21 +50,6 @@ import com.vdc.tv.ui.components.LoadingIndicator
 import com.vdc.tv.ui.components.PillBorderIndicator
 import com.vdc.tv.ui.components.ProfileButton
 import com.vdc.tv.viewmodels.MainViewModel
-=======
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyServer
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyUser
-import dev.jdtech.jellyfin.models.CollectionType
-import dev.jdtech.jellyfin.models.User
-import dev.jdtech.jellyfin.presentation.film.HomeScreen
-import dev.jdtech.jellyfin.presentation.film.MediaScreen
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.ui.components.LoadingIndicator
-import dev.jdtech.jellyfin.ui.components.PillBorderIndicator
-import dev.jdtech.jellyfin.ui.components.ProfileButton
-import dev.jdtech.jellyfin.viewmodels.MainViewModel
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import org.jellyfin.sdk.model.api.BaseItemKind
 

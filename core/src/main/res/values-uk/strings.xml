@@ -83,8 +83,4 @@
     <string name="preparing_download">Підготовка до завантаження</string>
     <string name="stop_download">Зупинити завантаження</string>
     <string name="privacy_policy_notice">Використовуючи Findroid, ви погоджуєтеся з <a href="https://raw.githubusercontent.com/jarnedemeulemeester/findroid/main/PRIVACY">Політикою конфіденційності</a>, в якій зазначено, що ми не збираємо жодних даних</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

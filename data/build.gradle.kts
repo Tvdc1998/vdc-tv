@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "dev.jdtech.jellyfin.data"
+    namespace = "com.vdc.tv.data"
     compileSdk = Versions.COMPILE_SDK
     buildToolsVersion = Versions.BUILD_TOOLS
 

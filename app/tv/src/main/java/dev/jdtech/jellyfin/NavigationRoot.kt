@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv
-=======
-package dev.jdtech.jellyfin
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.os.Parcel
 import android.os.Parcelable
@@ -11,7 +7,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
-<<<<<<< HEAD
 import com.vdc.tv.models.CollectionType
 import com.vdc.tv.models.FindroidSeason
 import com.vdc.tv.presentation.film.LibraryScreen
@@ -29,25 +24,6 @@ import com.vdc.tv.ui.MovieScreen
 import com.vdc.tv.ui.PlayerScreen
 import com.vdc.tv.utils.base64ToByteArray
 import com.vdc.tv.utils.toBase64Str
-=======
-import dev.jdtech.jellyfin.models.CollectionType
-import dev.jdtech.jellyfin.models.FindroidSeason
-import dev.jdtech.jellyfin.presentation.film.LibraryScreen
-import dev.jdtech.jellyfin.presentation.film.SeasonScreen
-import dev.jdtech.jellyfin.presentation.film.ShowScreen
-import dev.jdtech.jellyfin.presentation.settings.SettingsScreen
-import dev.jdtech.jellyfin.presentation.settings.SettingsSubScreen
-import dev.jdtech.jellyfin.presentation.setup.addserver.AddServerScreen
-import dev.jdtech.jellyfin.presentation.setup.login.LoginScreen
-import dev.jdtech.jellyfin.presentation.setup.servers.ServersScreen
-import dev.jdtech.jellyfin.presentation.setup.users.UsersScreen
-import dev.jdtech.jellyfin.presentation.setup.welcome.WelcomeScreen
-import dev.jdtech.jellyfin.ui.MainScreen
-import dev.jdtech.jellyfin.ui.MovieScreen
-import dev.jdtech.jellyfin.ui.PlayerScreen
-import dev.jdtech.jellyfin.utils.base64ToByteArray
-import dev.jdtech.jellyfin.utils.toBase64Str
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import kotlinx.parcelize.parcelableCreator
 import kotlinx.serialization.Serializable

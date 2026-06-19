@@ -34,8 +34,4 @@
     <string name="subtitles">उपशीर्षक</string>
     <string name="mpv_player_summary">वीडियो चलाने के लिए प्रयोगात्मक एमपीवी (mpv) प्लेयर का उपयोग करें। एमपीवी में अधिक वीडियो, ऑडियो और सबटाइटल कोडेक्स के लिए समर्थन है।</string>
     <string name="player_gestures_seek_summary">आगे या पीछे खोजने (सीक) के लिए क्षैतिज रूप से स्वाइप करें</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

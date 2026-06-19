@@ -68,8 +68,4 @@
     <string name="trickplay">Vignettes d’aperçu</string>
     <string name="pref_player_gestures_seek_trickplay">Vignettes d’aperçu lors du déplacement du curseur de lecture</string>
     <string name="pref_player_gestures_seek_trickplay_summary">Afficher des vignettes d’aperçu lors du déplacement du curseur de lecture</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

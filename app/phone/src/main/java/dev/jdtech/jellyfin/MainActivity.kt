@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv
-=======
-package dev.jdtech.jellyfin
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -21,17 +17,10 @@ import androidx.work.NetworkType
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import dagger.hilt.android.AndroidEntryPoint
-<<<<<<< HEAD
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.utils.LocalOfflineMode
 import com.vdc.tv.viewmodels.MainViewModel
 import com.vdc.tv.work.SyncWorker
-=======
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.utils.LocalOfflineMode
-import dev.jdtech.jellyfin.viewmodels.MainViewModel
-import dev.jdtech.jellyfin.work.SyncWorker
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

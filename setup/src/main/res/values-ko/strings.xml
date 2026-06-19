@@ -29,8 +29,4 @@
     <string name="add_address">주소 추가</string>
     <string name="remove_server_address">서버 주소 제</string>
     <string name="remove_server_address_dialog_text">서버 주소 %1$s를 제거하는것이 확실합니까\?</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

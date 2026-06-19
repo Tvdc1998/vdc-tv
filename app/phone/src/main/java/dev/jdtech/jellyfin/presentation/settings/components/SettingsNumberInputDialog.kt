@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.settings.components
-=======
-package dev.jdtech.jellyfin.presentation.settings.components
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -30,7 +26,6 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
-<<<<<<< HEAD
 import com.vdc.tv.presentation.components.BaseDialog
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
@@ -39,16 +34,6 @@ import com.vdc.tv.settings.domain.models.Preference as PreferenceBackend
 import com.vdc.tv.settings.presentation.models.Preference
 import com.vdc.tv.settings.presentation.models.PreferenceIntInput
 import com.vdc.tv.settings.presentation.models.PreferenceLongInput
-=======
-import dev.jdtech.jellyfin.presentation.components.BaseDialog
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.settings.R as SettingsR
-import dev.jdtech.jellyfin.settings.domain.models.Preference as PreferenceBackend
-import dev.jdtech.jellyfin.settings.presentation.models.Preference
-import dev.jdtech.jellyfin.settings.presentation.models.PreferenceIntInput
-import dev.jdtech.jellyfin.settings.presentation.models.PreferenceLongInput
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun SettingsIntInputDialog(

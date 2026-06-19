@@ -1,19 +1,10 @@
-<<<<<<< HEAD
 package com.vdc.tv.core.presentation.subtitles
-=======
-package dev.jdtech.jellyfin.core.presentation.subtitles
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-<<<<<<< HEAD
 import com.vdc.tv.repository.JellyfinRepository
 import com.vdc.tv.settings.domain.AppPreferences
-=======
-import dev.jdtech.jellyfin.repository.JellyfinRepository
-import dev.jdtech.jellyfin.settings.domain.AppPreferences
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import javax.inject.Inject
 import kotlinx.coroutines.channels.Channel
@@ -117,11 +108,7 @@ class SubtitlesViewModel @Inject constructor(
             try {
                 val success = repository.downloadRemoteSubtitle(currentItemId, subtitleId)
                 if (success) {
-<<<<<<< HEAD
                     var newSubtitle: com.vdc.tv.models.FindroidMediaStream? = null
-=======
-                    var newSubtitle: dev.jdtech.jellyfin.models.FindroidMediaStream? = null
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
                     // Retry searching for the new subtitle in media sources up to 5 times
                     repeat(5) {

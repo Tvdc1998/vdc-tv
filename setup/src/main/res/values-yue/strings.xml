@@ -15,8 +15,4 @@
     <string name="add_server_btn_connect">连接</string>
     <string name="add_server_error_version">唔支持嘅服务器版本：%1$s。唔该更新服务器</string>
     <string name="login_btn_login">登录</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

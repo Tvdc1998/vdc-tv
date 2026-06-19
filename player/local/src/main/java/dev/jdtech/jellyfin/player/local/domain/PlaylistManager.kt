@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.vdc.tv.player.local.domain
 
 import androidx.core.net.toUri
@@ -14,23 +13,6 @@ import com.vdc.tv.player.core.domain.models.PlayerChapter
 import com.vdc.tv.player.core.domain.models.PlayerItem
 import com.vdc.tv.player.core.domain.models.TrickplayInfo
 import com.vdc.tv.repository.JellyfinRepository
-=======
-package dev.jdtech.jellyfin.player.local.domain
-
-import androidx.core.net.toUri
-import androidx.media3.common.MimeTypes
-import dev.jdtech.jellyfin.models.FindroidChapter
-import dev.jdtech.jellyfin.models.FindroidEpisode
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.FindroidMovie
-import dev.jdtech.jellyfin.models.FindroidSourceType
-import dev.jdtech.jellyfin.models.FindroidSources
-import dev.jdtech.jellyfin.player.core.domain.models.ExternalSubtitle
-import dev.jdtech.jellyfin.player.core.domain.models.PlayerChapter
-import dev.jdtech.jellyfin.player.core.domain.models.PlayerItem
-import dev.jdtech.jellyfin.player.core.domain.models.TrickplayInfo
-import dev.jdtech.jellyfin.repository.JellyfinRepository
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import javax.inject.Inject
 import org.jellyfin.sdk.model.api.BaseItemKind

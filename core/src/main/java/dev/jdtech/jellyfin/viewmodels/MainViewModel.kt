@@ -1,24 +1,13 @@
-<<<<<<< HEAD
 package com.vdc.tv.viewmodels
-=======
-package dev.jdtech.jellyfin.viewmodels
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.SharedPreferences
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-<<<<<<< HEAD
 import com.vdc.tv.database.ServerDatabaseDao
 import com.vdc.tv.models.Server
 import com.vdc.tv.models.User
 import com.vdc.tv.settings.domain.AppPreferences
-=======
-import dev.jdtech.jellyfin.database.ServerDatabaseDao
-import dev.jdtech.jellyfin.models.Server
-import dev.jdtech.jellyfin.models.User
-import dev.jdtech.jellyfin.settings.domain.AppPreferences
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

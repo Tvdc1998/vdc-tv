@@ -28,8 +28,4 @@
    <string name="add_server_address">Tilføj server-adresse</string>
    <string name="remove_server_address">Fjern server-adresse</string>
    <string name="remove_server_address_dialog_text">Er du sikker på, at du vil fjerne server-adressen %1$s</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film
-=======
-package dev.jdtech.jellyfin.presentation.film
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -36,7 +32,6 @@ import androidx.tv.material3.ButtonDefaults
 import androidx.tv.material3.Icon
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
-<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyMovies
 import com.vdc.tv.film.presentation.library.LibraryAction
@@ -53,24 +48,6 @@ import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.ui.components.Direction
 import com.vdc.tv.ui.components.ItemCard
-=======
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyMovies
-import dev.jdtech.jellyfin.film.presentation.library.LibraryAction
-import dev.jdtech.jellyfin.film.presentation.library.LibraryState
-import dev.jdtech.jellyfin.film.presentation.library.LibraryViewType
-import dev.jdtech.jellyfin.film.presentation.library.LibraryViewModel
-import dev.jdtech.jellyfin.models.CollectionType
-import dev.jdtech.jellyfin.models.FindroidFolder
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.FindroidMovie
-import dev.jdtech.jellyfin.models.FindroidShow
-import dev.jdtech.jellyfin.presentation.film.components.SortByDialog
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.ui.components.Direction
-import dev.jdtech.jellyfin.ui.components.ItemCard
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf

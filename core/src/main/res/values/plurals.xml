@@ -4,8 +4,4 @@
         <item quantity="one">%d server discovered</item>
         <item quantity="other">%d servers discovered</item>
     </plurals>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

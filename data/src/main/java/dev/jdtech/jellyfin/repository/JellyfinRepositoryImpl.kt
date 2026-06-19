@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 package com.vdc.tv.repository
-=======
-package dev.jdtech.jellyfin.repository
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.Context
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-<<<<<<< HEAD
 import com.vdc.tv.api.JellyfinApi
 import com.vdc.tv.api.SubtitleApi
 import com.vdc.tv.database.ServerDatabaseDao
@@ -34,33 +29,6 @@ import com.vdc.tv.models.toFindroidSegment
 import com.vdc.tv.models.toFindroidShow
 import com.vdc.tv.models.toFindroidSource
 import com.vdc.tv.settings.domain.AppPreferences
-=======
-import dev.jdtech.jellyfin.api.JellyfinApi
-import dev.jdtech.jellyfin.api.SubtitleApi
-import dev.jdtech.jellyfin.database.ServerDatabaseDao
-import dev.jdtech.jellyfin.models.FindroidCollection
-import dev.jdtech.jellyfin.models.FindroidEpisode
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.FindroidMovie
-import dev.jdtech.jellyfin.models.FindroidPerson
-import dev.jdtech.jellyfin.models.FindroidSeason
-import dev.jdtech.jellyfin.models.FindroidSegment
-import dev.jdtech.jellyfin.models.FindroidShow
-import dev.jdtech.jellyfin.models.FindroidSource
-import dev.jdtech.jellyfin.models.RemoteSubtitleDto
-import dev.jdtech.jellyfin.models.SortBy
-import dev.jdtech.jellyfin.models.SortOrder
-import dev.jdtech.jellyfin.models.toFindroidCollection
-import dev.jdtech.jellyfin.models.toFindroidEpisode
-import dev.jdtech.jellyfin.models.toFindroidItem
-import dev.jdtech.jellyfin.models.toFindroidMovie
-import dev.jdtech.jellyfin.models.toFindroidPerson
-import dev.jdtech.jellyfin.models.toFindroidSeason
-import dev.jdtech.jellyfin.models.toFindroidSegment
-import dev.jdtech.jellyfin.models.toFindroidShow
-import dev.jdtech.jellyfin.models.toFindroidSource
-import dev.jdtech.jellyfin.settings.domain.AppPreferences
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.io.File
 import java.util.UUID
 import kotlinx.coroutines.Dispatchers

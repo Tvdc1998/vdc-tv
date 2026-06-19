@@ -1,21 +1,11 @@
-<<<<<<< HEAD
 package com.vdc.tv.film.presentation.person
-=======
-package dev.jdtech.jellyfin.film.presentation.person
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-<<<<<<< HEAD
 import com.vdc.tv.models.FindroidMovie
 import com.vdc.tv.models.FindroidShow
 import com.vdc.tv.repository.JellyfinRepository
-=======
-import dev.jdtech.jellyfin.models.FindroidMovie
-import dev.jdtech.jellyfin.models.FindroidShow
-import dev.jdtech.jellyfin.repository.JellyfinRepository
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow

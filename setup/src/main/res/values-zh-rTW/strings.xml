@@ -29,8 +29,4 @@
     <string name="add_server_address">添加伺服器地址</string>
     <string name="remove_server_address">刪除伺服器位址</string>
     <string name="remove_server_address_dialog_text">您確定要刪除伺服器位址嗎%1$s</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

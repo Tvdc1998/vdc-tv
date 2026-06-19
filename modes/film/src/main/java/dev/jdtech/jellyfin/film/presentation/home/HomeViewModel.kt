@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 package com.vdc.tv.film.presentation.home
-=======
-package dev.jdtech.jellyfin.film.presentation.home
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-<<<<<<< HEAD
 import com.vdc.tv.database.ServerDatabaseDao
 import com.vdc.tv.film.R as FilmR
 import com.vdc.tv.models.CollectionType
@@ -17,17 +12,6 @@ import com.vdc.tv.models.UiText
 import com.vdc.tv.repository.JellyfinRepository
 import com.vdc.tv.settings.domain.AppPreferences
 import com.vdc.tv.utils.toView
-=======
-import dev.jdtech.jellyfin.database.ServerDatabaseDao
-import dev.jdtech.jellyfin.film.R as FilmR
-import dev.jdtech.jellyfin.models.CollectionType
-import dev.jdtech.jellyfin.models.HomeItem
-import dev.jdtech.jellyfin.models.HomeSection
-import dev.jdtech.jellyfin.models.UiText
-import dev.jdtech.jellyfin.repository.JellyfinRepository
-import dev.jdtech.jellyfin.settings.domain.AppPreferences
-import dev.jdtech.jellyfin.utils.toView
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
@@ -151,56 +135,32 @@ constructor(
                 Triple(
                     "Action",
                     appPreferences.homeGenreAction,
-<<<<<<< HEAD
                     com.vdc.tv.settings.R.string.home_genre_action,
-=======
-                    dev.jdtech.jellyfin.settings.R.string.home_genre_action,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 ),
                 Triple(
                     "Comedy",
                     appPreferences.homeGenreComedy,
-<<<<<<< HEAD
                     com.vdc.tv.settings.R.string.home_genre_comedy,
-=======
-                    dev.jdtech.jellyfin.settings.R.string.home_genre_comedy,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 ),
                 Triple(
                     "Drama",
                     appPreferences.homeGenreDrama,
-<<<<<<< HEAD
                     com.vdc.tv.settings.R.string.home_genre_drama,
-=======
-                    dev.jdtech.jellyfin.settings.R.string.home_genre_drama,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 ),
                 Triple(
                     "Horror",
                     appPreferences.homeGenreHorror,
-<<<<<<< HEAD
                     com.vdc.tv.settings.R.string.home_genre_horror,
-=======
-                    dev.jdtech.jellyfin.settings.R.string.home_genre_horror,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 ),
                 Triple(
                     "Animation",
                     appPreferences.homeGenreAnimation,
-<<<<<<< HEAD
                     com.vdc.tv.settings.R.string.home_genre_animation,
-=======
-                    dev.jdtech.jellyfin.settings.R.string.home_genre_animation,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 ),
                 Triple(
                     "Kids",
                     appPreferences.homeGenreKids,
-<<<<<<< HEAD
                     com.vdc.tv.settings.R.string.home_genre_kids,
-=======
-                    dev.jdtech.jellyfin.settings.R.string.home_genre_kids,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                 ),
             )
 

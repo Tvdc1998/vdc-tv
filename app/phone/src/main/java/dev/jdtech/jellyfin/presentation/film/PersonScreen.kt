@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film
-=======
-package dev.jdtech.jellyfin.presentation.film
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -38,7 +34,6 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.window.core.layout.WindowSizeClass
 import coil3.compose.AsyncImage
-<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyMovies
 import com.vdc.tv.core.presentation.dummy.dummyPersonDetail
@@ -54,23 +49,6 @@ import com.vdc.tv.presentation.film.components.OverviewText
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.rememberSafePadding
-=======
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyMovies
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyPersonDetail
-import dev.jdtech.jellyfin.film.presentation.person.PersonAction
-import dev.jdtech.jellyfin.film.presentation.person.PersonState
-import dev.jdtech.jellyfin.film.presentation.person.PersonViewModel
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.FindroidPerson
-import dev.jdtech.jellyfin.presentation.film.components.Direction
-import dev.jdtech.jellyfin.presentation.film.components.ItemCard
-import dev.jdtech.jellyfin.presentation.film.components.ItemTopBar
-import dev.jdtech.jellyfin.presentation.film.components.OverviewText
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.presentation.utils.rememberSafePadding
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @Composable

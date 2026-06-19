@@ -91,8 +91,4 @@
     <string name="unmark_as_played">시청함으로 표시하지 않기</string>
     <string name="add_to_favorites">즐겨찾기에 추가</string>
     <string name="collection_no_media">이 컬렉션에는 미디어가 포함되어 있지 않습니다</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

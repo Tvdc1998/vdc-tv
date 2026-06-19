@@ -22,8 +22,4 @@
    <string name="remove_server_dialog_text">क्या आप सुनिश्चित हैं कि आप सर्वर %1$s को हटाना चाहते हैं</string>
    <string name="remove_server_address">सर्वर का पता हटाएं</string>
    <string name="remove_server_address_dialog_text">क्या आप सुनिश्चित हैं कि आप सर्वर का पता %1$s हटाना चाहते हैं</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

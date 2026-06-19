@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.ui
-=======
-package dev.jdtech.jellyfin.ui
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -47,7 +43,6 @@ import androidx.tv.material3.LocalContentColor
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
 import coil3.compose.AsyncImage
-<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyMovie
 import com.vdc.tv.core.presentation.dummy.dummyVideoMetadata
@@ -58,18 +53,6 @@ import com.vdc.tv.film.presentation.movie.MovieViewModel
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.utils.format
-=======
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyMovie
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyVideoMetadata
-import dev.jdtech.jellyfin.core.presentation.theme.Yellow
-import dev.jdtech.jellyfin.film.presentation.movie.MovieAction
-import dev.jdtech.jellyfin.film.presentation.movie.MovieState
-import dev.jdtech.jellyfin.film.presentation.movie.MovieViewModel
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.utils.format
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @Composable

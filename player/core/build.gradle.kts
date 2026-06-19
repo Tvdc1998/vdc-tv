@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "dev.jdtech.jellyfin.player.core"
+    namespace = "com.vdc.tv.player.core"
     compileSdk = Versions.COMPILE_SDK
     buildToolsVersion = Versions.BUILD_TOOLS
 

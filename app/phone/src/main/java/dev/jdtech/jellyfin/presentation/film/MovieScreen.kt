@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film
-=======
-package dev.jdtech.jellyfin.presentation.film
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.content.Intent
 import android.widget.Toast
@@ -38,7 +34,6 @@ import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.core.graphics.toColorInt
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-<<<<<<< HEAD
 import com.vdc.tv.PlayerActivity
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.downloader.DownloaderAction
@@ -63,32 +58,6 @@ import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.LocalOfflineMode
 import com.vdc.tv.presentation.utils.rememberSafePadding
 import com.vdc.tv.utils.ObserveAsEvents
-=======
-import dev.jdtech.jellyfin.PlayerActivity
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.core.presentation.downloader.DownloaderAction
-import dev.jdtech.jellyfin.core.presentation.downloader.DownloaderEvent
-import dev.jdtech.jellyfin.core.presentation.downloader.DownloaderState
-import dev.jdtech.jellyfin.core.presentation.downloader.DownloaderViewModel
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyMovie
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyVideoMetadata
-import dev.jdtech.jellyfin.film.presentation.movie.MovieAction
-import dev.jdtech.jellyfin.film.presentation.movie.MovieState
-import dev.jdtech.jellyfin.film.presentation.movie.MovieViewModel
-import dev.jdtech.jellyfin.presentation.film.components.ActorsRow
-import dev.jdtech.jellyfin.presentation.film.components.ExtraInfoText
-import dev.jdtech.jellyfin.presentation.film.components.InfoText
-import dev.jdtech.jellyfin.presentation.film.components.ItemButtonsBar
-import dev.jdtech.jellyfin.presentation.film.components.ItemHeader
-import dev.jdtech.jellyfin.presentation.film.components.ItemTopBar
-import dev.jdtech.jellyfin.presentation.film.components.OverviewText
-import dev.jdtech.jellyfin.presentation.film.components.VideoMetadataBar
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.presentation.utils.LocalOfflineMode
-import dev.jdtech.jellyfin.presentation.utils.rememberSafePadding
-import dev.jdtech.jellyfin.utils.ObserveAsEvents
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import org.jellyfin.sdk.model.api.BaseItemKind
 

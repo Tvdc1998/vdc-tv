@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.addserver
-=======
-package dev.jdtech.jellyfin.presentation.setup.addserver
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Arrangement
@@ -46,7 +42,6 @@ import androidx.tv.material3.Icon
 import androidx.tv.material3.LocalContentColor
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
-<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyDiscoveredServer
 import com.vdc.tv.presentation.setup.components.DiscoveredServerItem
 import com.vdc.tv.presentation.theme.FindroidTheme
@@ -57,18 +52,6 @@ import com.vdc.tv.setup.presentation.addserver.AddServerEvent
 import com.vdc.tv.setup.presentation.addserver.AddServerState
 import com.vdc.tv.setup.presentation.addserver.AddServerViewModel
 import com.vdc.tv.utils.ObserveAsEvents
-=======
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyDiscoveredServer
-import dev.jdtech.jellyfin.presentation.setup.components.DiscoveredServerItem
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.setup.R
-import dev.jdtech.jellyfin.setup.presentation.addserver.AddServerAction
-import dev.jdtech.jellyfin.setup.presentation.addserver.AddServerEvent
-import dev.jdtech.jellyfin.setup.presentation.addserver.AddServerState
-import dev.jdtech.jellyfin.setup.presentation.addserver.AddServerViewModel
-import dev.jdtech.jellyfin.utils.ObserveAsEvents
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun AddServerScreen(onSuccess: () -> Unit, viewModel: AddServerViewModel = hiltViewModel()) {
@@ -129,11 +112,7 @@ private fun AddServerScreenLayout(state: AddServerState, onAction: (AddServerAct
                 leadingIcon = {
                     Icon(
                         painter =
-<<<<<<< HEAD
                             painterResource(id = com.vdc.tv.core.R.drawable.ic_server),
-=======
-                            painterResource(id = dev.jdtech.jellyfin.core.R.drawable.ic_server),
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                         contentDescription = null,
                     )
                 },

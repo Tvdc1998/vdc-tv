@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # VDC TV
 ![VDC Tv banner](images/vdc_tv_banner.png)
 VDC TV is a VdC Studios Android application for Jellyfin that provides a native user interface to browse and play movies and series.
@@ -37,8 +36,3 @@ This project is licensed under the GPLv3 License.
 
 VdC Tv is a project of VdC Studios
 ![VDC Studios banner](images/vdcstudios-banner-transparant.png)
-=======
-
-
-## License
-This project is licensed under the GPLv3 License.

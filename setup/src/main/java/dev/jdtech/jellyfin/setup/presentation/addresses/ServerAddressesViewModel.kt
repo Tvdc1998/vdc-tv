@@ -1,22 +1,12 @@
-<<<<<<< HEAD
 package com.vdc.tv.setup.presentation.addresses
-=======
-package dev.jdtech.jellyfin.setup.presentation.addresses
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-<<<<<<< HEAD
 import com.vdc.tv.api.JellyfinApi
 import com.vdc.tv.database.ServerDatabaseDao
 import com.vdc.tv.models.ServerAddress
-=======
-import dev.jdtech.jellyfin.api.JellyfinApi
-import dev.jdtech.jellyfin.database.ServerDatabaseDao
-import dev.jdtech.jellyfin.models.ServerAddress
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers

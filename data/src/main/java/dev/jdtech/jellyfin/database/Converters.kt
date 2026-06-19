@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 package com.vdc.tv.database
 
 import androidx.room.TypeConverter
 import com.vdc.tv.models.FindroidChapter
-=======
-package dev.jdtech.jellyfin.database
-
-import androidx.room.TypeConverter
-import dev.jdtech.jellyfin.models.FindroidChapter
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.time.ZoneOffset
 import java.util.UUID
 import kotlinx.serialization.encodeToString

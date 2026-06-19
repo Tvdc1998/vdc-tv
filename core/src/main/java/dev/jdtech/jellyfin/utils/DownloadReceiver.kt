@@ -1,29 +1,16 @@
-<<<<<<< HEAD
 package com.vdc.tv.utils
-=======
-package dev.jdtech.jellyfin.utils
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.DownloadManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import dagger.hilt.android.AndroidEntryPoint
-<<<<<<< HEAD
 import com.vdc.tv.database.ServerDatabaseDao
 import com.vdc.tv.models.FindroidItem
 import com.vdc.tv.models.toFindroidEpisode
 import com.vdc.tv.models.toFindroidMovie
 import com.vdc.tv.models.toFindroidSource
 import com.vdc.tv.repository.JellyfinRepository
-=======
-import dev.jdtech.jellyfin.database.ServerDatabaseDao
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.toFindroidEpisode
-import dev.jdtech.jellyfin.models.toFindroidMovie
-import dev.jdtech.jellyfin.models.toFindroidSource
-import dev.jdtech.jellyfin.repository.JellyfinRepository
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.io.File
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope

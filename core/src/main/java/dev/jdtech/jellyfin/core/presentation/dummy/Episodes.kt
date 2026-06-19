@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.vdc.tv.core.presentation.dummy
 
 import com.vdc.tv.models.FindroidEpisode
@@ -6,15 +5,6 @@ import com.vdc.tv.models.FindroidImages
 import com.vdc.tv.models.FindroidMediaStream
 import com.vdc.tv.models.FindroidSource
 import com.vdc.tv.models.FindroidSourceType
-=======
-package dev.jdtech.jellyfin.core.presentation.dummy
-
-import dev.jdtech.jellyfin.models.FindroidEpisode
-import dev.jdtech.jellyfin.models.FindroidImages
-import dev.jdtech.jellyfin.models.FindroidMediaStream
-import dev.jdtech.jellyfin.models.FindroidSource
-import dev.jdtech.jellyfin.models.FindroidSourceType
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.time.LocalDateTime
 import java.util.UUID
 import org.jellyfin.sdk.model.api.MediaStreamType

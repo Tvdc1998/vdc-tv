@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 package com.vdc.tv.core.presentation.dummy
 
 import com.vdc.tv.models.FindroidImages
 import com.vdc.tv.models.FindroidShow
-=======
-package dev.jdtech.jellyfin.core.presentation.dummy
-
-import dev.jdtech.jellyfin.models.FindroidImages
-import dev.jdtech.jellyfin.models.FindroidShow
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.time.LocalDateTime
 import java.util.UUID
 

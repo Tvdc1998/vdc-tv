@@ -29,8 +29,4 @@
     <string name="add_server_address">Adicionar endereço do servidor</string>
     <string name="remove_server_address">Excluir endereço do servidor</string>
     <string name="remove_server_address_dialog_text">Tem certeza de que deseja excluir o endereço do servidor %1$s</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

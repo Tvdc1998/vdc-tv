@@ -29,8 +29,4 @@
    <string name="add_server_address">Agregar dirección del servidor</string>
    <string name="remove_server_address">Remover dirección del servidor</string>
    <string name="remove_server_address_dialog_text">¿Está seguro de remover el servidor con dirección %1$s</string>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8

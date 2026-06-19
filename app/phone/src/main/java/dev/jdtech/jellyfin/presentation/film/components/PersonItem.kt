@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
-=======
-package dev.jdtech.jellyfin.presentation.film.components
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -21,17 +17,10 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyPerson
 import com.vdc.tv.models.FindroidItemPerson
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
-=======
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyPerson
-import dev.jdtech.jellyfin.models.FindroidItemPerson
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun PersonItem(person: FindroidItemPerson, onClick: () -> Unit, modifier: Modifier = Modifier) {

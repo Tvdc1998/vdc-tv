@@ -1,26 +1,14 @@
-<<<<<<< HEAD
 package com.vdc.tv.film.presentation.library
-=======
-package dev.jdtech.jellyfin.film.presentation.library
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import dagger.hilt.android.lifecycle.HiltViewModel
-<<<<<<< HEAD
 import com.vdc.tv.models.CollectionType
 import com.vdc.tv.models.SortBy
 import com.vdc.tv.models.SortOrder
 import com.vdc.tv.repository.JellyfinRepository
 import com.vdc.tv.settings.domain.AppPreferences
-=======
-import dev.jdtech.jellyfin.models.CollectionType
-import dev.jdtech.jellyfin.models.SortBy
-import dev.jdtech.jellyfin.models.SortOrder
-import dev.jdtech.jellyfin.repository.JellyfinRepository
-import dev.jdtech.jellyfin.settings.domain.AppPreferences
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import org.jellyfin.sdk.model.api.ItemFilter
 import java.util.UUID
 import javax.inject.Inject

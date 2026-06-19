@@ -1,22 +1,12 @@
-<<<<<<< HEAD
 package com.vdc.tv.utils
-=======
-package dev.jdtech.jellyfin.utils
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.app.Activity
 import android.content.Intent
 import android.content.res.Resources
 import android.util.Base64
-<<<<<<< HEAD
 import com.vdc.tv.models.CollectionType
 import com.vdc.tv.models.FindroidItem
 import com.vdc.tv.models.View
-=======
-import dev.jdtech.jellyfin.models.CollectionType
-import dev.jdtech.jellyfin.models.FindroidItem
-import dev.jdtech.jellyfin.models.View
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.nio.charset.StandardCharsets
 import java.text.DateFormat
 import java.time.ZoneOffset

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.theme
-=======
-package dev.jdtech.jellyfin.presentation.theme
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -18,11 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.tv.material3.LocalContentColor as LocalContentColorTv
 import androidx.tv.material3.MaterialTheme as MaterialThemeTv
 import androidx.tv.material3.contentColorFor as contentColorForTv
-<<<<<<< HEAD
 import com.vdc.tv.core.presentation.theme.Spacings
-=======
-import dev.jdtech.jellyfin.core.presentation.theme.Spacings
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun FindroidTheme(theme: String = "system", content: @Composable BoxScope.() -> Unit) {

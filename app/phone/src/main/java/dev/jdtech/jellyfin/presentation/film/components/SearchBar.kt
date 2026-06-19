@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film.components
-=======
-package dev.jdtech.jellyfin.presentation.film.components
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.core.animateDpAsState
@@ -37,7 +33,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.film.R as FilmR
 import com.vdc.tv.film.presentation.search.SearchAction
@@ -45,15 +40,6 @@ import com.vdc.tv.film.presentation.search.SearchState
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.presentation.utils.GridCellsAdaptiveWithMinColumns
 import com.vdc.tv.presentation.utils.rememberSafePadding
-=======
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.film.R as FilmR
-import dev.jdtech.jellyfin.film.presentation.search.SearchAction
-import dev.jdtech.jellyfin.film.presentation.search.SearchState
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.presentation.utils.GridCellsAdaptiveWithMinColumns
-import dev.jdtech.jellyfin.presentation.utils.rememberSafePadding
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import kotlinx.coroutines.delay
 
 @Composable

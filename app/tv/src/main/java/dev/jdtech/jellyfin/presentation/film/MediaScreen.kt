@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.film
-=======
-package dev.jdtech.jellyfin.presentation.film
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -20,7 +16,6 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.tv.material3.MaterialTheme
-<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyCollections
 import com.vdc.tv.film.presentation.media.MediaAction
 import com.vdc.tv.film.presentation.media.MediaState
@@ -30,17 +25,6 @@ import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.ui.components.Direction
 import com.vdc.tv.ui.components.ItemCard
-=======
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyCollections
-import dev.jdtech.jellyfin.film.presentation.media.MediaAction
-import dev.jdtech.jellyfin.film.presentation.media.MediaState
-import dev.jdtech.jellyfin.film.presentation.media.MediaViewModel
-import dev.jdtech.jellyfin.models.CollectionType
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
-import dev.jdtech.jellyfin.ui.components.Direction
-import dev.jdtech.jellyfin.ui.components.ItemCard
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import java.util.UUID
 
 @Composable

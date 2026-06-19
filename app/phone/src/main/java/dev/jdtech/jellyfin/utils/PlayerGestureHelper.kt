@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.utils
-=======
-package dev.jdtech.jellyfin.utils
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import android.annotation.SuppressLint
 import android.content.res.Resources
@@ -29,7 +25,6 @@ import coil3.load
 import coil3.request.crossfade
 import coil3.request.transformations
 import coil3.transform.RoundedCornersTransformation
-<<<<<<< HEAD
 import com.vdc.tv.PlayerActivity
 import com.vdc.tv.core.Constants
 import com.vdc.tv.isControlsLocked
@@ -37,15 +32,6 @@ import com.vdc.tv.player.core.domain.models.PlayerChapter
 import com.vdc.tv.player.core.domain.models.Trickplay
 import com.vdc.tv.player.local.mpv.MPVPlayer
 import com.vdc.tv.settings.domain.AppPreferences
-=======
-import dev.jdtech.jellyfin.PlayerActivity
-import dev.jdtech.jellyfin.core.Constants
-import dev.jdtech.jellyfin.isControlsLocked
-import dev.jdtech.jellyfin.player.core.domain.models.PlayerChapter
-import dev.jdtech.jellyfin.player.core.domain.models.Trickplay
-import dev.jdtech.jellyfin.player.local.mpv.MPVPlayer
-import dev.jdtech.jellyfin.settings.domain.AppPreferences
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import kotlin.math.abs
 import kotlinx.coroutines.Dispatchers
 import timber.log.Timber

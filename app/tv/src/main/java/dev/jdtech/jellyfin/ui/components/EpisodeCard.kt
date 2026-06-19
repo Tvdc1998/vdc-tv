@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.ui.components
-=======
-package dev.jdtech.jellyfin.ui.components
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Box
@@ -30,17 +26,10 @@ import androidx.tv.material3.ClickableSurfaceScale
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Surface
 import androidx.tv.material3.Text
-<<<<<<< HEAD
 import com.vdc.tv.core.presentation.dummy.dummyEpisode
 import com.vdc.tv.models.FindroidEpisode
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
-=======
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyEpisode
-import dev.jdtech.jellyfin.models.FindroidEpisode
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.presentation.theme.spacings
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 @Composable
 fun EpisodeCard(episode: FindroidEpisode, onClick: (FindroidEpisode) -> Unit) {
@@ -79,11 +68,7 @@ fun EpisodeCard(episode: FindroidEpisode, onClick: (FindroidEpisode) -> Unit) {
                 Text(
                     text =
                         stringResource(
-<<<<<<< HEAD
                             id = com.vdc.tv.core.R.string.episode_name,
-=======
-                            id = dev.jdtech.jellyfin.core.R.string.episode_name,
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
                             episode.indexNumber,
                             episode.name,
                         ),

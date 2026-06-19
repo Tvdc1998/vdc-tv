@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.vdc.tv.presentation.setup.servers
-=======
-package dev.jdtech.jellyfin.presentation.setup.servers
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -39,7 +35,6 @@ import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-<<<<<<< HEAD
 import com.vdc.tv.core.R as CoreR
 import com.vdc.tv.core.presentation.dummy.dummyServer
 import com.vdc.tv.core.presentation.dummy.dummyServerAddress
@@ -54,22 +49,6 @@ import com.vdc.tv.setup.presentation.servers.ServersEvent
 import com.vdc.tv.setup.presentation.servers.ServersState
 import com.vdc.tv.setup.presentation.servers.ServersViewModel
 import com.vdc.tv.utils.ObserveAsEvents
-=======
-import dev.jdtech.jellyfin.core.R as CoreR
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyServer
-import dev.jdtech.jellyfin.core.presentation.dummy.dummyServerAddress
-import dev.jdtech.jellyfin.models.ServerWithAddresses
-import dev.jdtech.jellyfin.presentation.setup.components.RootLayout
-import dev.jdtech.jellyfin.presentation.setup.components.ServerBottomSheet
-import dev.jdtech.jellyfin.presentation.setup.components.ServerItem
-import dev.jdtech.jellyfin.presentation.theme.FindroidTheme
-import dev.jdtech.jellyfin.setup.R as SetupR
-import dev.jdtech.jellyfin.setup.presentation.servers.ServersAction
-import dev.jdtech.jellyfin.setup.presentation.servers.ServersEvent
-import dev.jdtech.jellyfin.setup.presentation.servers.ServersState
-import dev.jdtech.jellyfin.setup.presentation.servers.ServersViewModel
-import dev.jdtech.jellyfin.utils.ObserveAsEvents
->>>>>>> b69d89e43a3035044e06a8a08f11960b3b6083e8
 import kotlinx.coroutines.launch
 
 @Composable
