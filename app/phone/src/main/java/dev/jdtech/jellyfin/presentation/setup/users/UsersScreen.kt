@@ -95,132 +95,130 @@ private fun UsersScreenLayout(
     var selectedUserForDeletion by remember { mutableStateOf<User?>(null) }
 
     RootLayout {
-        Box(modifier = Modifier.fillMaxSize()) {
-            Column(
-                modifier =
-                    Modifier.padding(horizontal = 24.dp)
-                        .widthIn(max = 480.dp)
-                        .fillMaxWidth()
-                        .align(Alignment.Center)
-            ) {
-                Spacer(modifier = Modifier.weight(0.2f))
-                Image(
-                    painter = painterResource(id = CoreR.drawable.vdcstudios_banner),
-                    contentDescription = null,
-                    modifier = Modifier.width(250.dp).align(Alignment.CenterHorizontally),
-                )
-                Spacer(modifier = Modifier.height(32.dp))
+        Column(
+            modifier =
+                Modifier.padding(horizontal = 24.dp)
+                    .widthIn(max = 480.dp)
+                    .fillMaxWidth()
+                    .align(Alignment.Center)
+        ) {
+            Spacer(modifier = Modifier.weight(0.2f))
+            Image(
+                painter = painterResource(id = CoreR.drawable.vdcstudios_banner),
+                contentDescription = null,
+                modifier = Modifier.width(250.dp).align(Alignment.CenterHorizontally),
+            )
+            Spacer(modifier = Modifier.height(32.dp))
+            Text(
+                text = stringResource(SetupR.string.users),
+                style = MaterialTheme.typography.headlineMedium,
+            )
+            Text(
+                text = stringResource(SetupR.string.server_subtitle, state.serverName ?: ""),
+                style = MaterialTheme.typography.titleMedium,
+            )
+            Spacer(modifier = Modifier.height(24.dp))
+            if (state.users.isEmpty() && state.publicUsers.isEmpty()) {
                 Text(
-                    text = stringResource(SetupR.string.users),
-                    style = MaterialTheme.typography.headlineMedium,
+                    text = stringResource(SetupR.string.users_no_users),
+                    style = MaterialTheme.typography.bodyMedium,
                 )
-                Text(
-                    text = stringResource(SetupR.string.server_subtitle, state.serverName ?: ""),
-                    style = MaterialTheme.typography.titleMedium,
-                )
-                Spacer(modifier = Modifier.height(24.dp))
-                if (state.users.isEmpty() && state.publicUsers.isEmpty()) {
-                    Text(
-                        text = stringResource(SetupR.string.users_no_users),
-                        style = MaterialTheme.typography.bodyMedium,
-                    )
-                    Spacer(modifier = Modifier.weight(1f))
-                } else {
-                    LazyColumn(
-                        verticalArrangement = Arrangement.spacedBy(12.dp),
-                        modifier = Modifier.fillMaxWidth().weight(1f),
-                    ) {
-                        items(state.users) { user ->
-                            UserItem(
-                                name = user.name,
-                                userId = user.id.toString(),
-                                primaryImageTag = user.primaryImageTag,
-                                modifier = Modifier.fillMaxWidth(),
-                                onClick = { onAction(UsersAction.OnUserClick(user = user)) },
-                                onLongClick = {
-                                    selectedUserForDeletion = user
-                                    openDeleteDialog = true
-                                },
-                            )
-                        }
-                        items(state.publicUsers) { user ->
-                            UserItem(
-                                name = user.name,
-                                userId = user.id.toString(),
-                                primaryImageTag = user.primaryImageTag,
-                                modifier = Modifier.fillMaxWidth().alpha(0.7f),
-                                onClick = {
-                                    onAction(UsersAction.OnPublicUserClick(user = user))
-                                },
-                                onLongClick = {},
-                            )
-                        }
-                    }
-                }
-            }
-            if (showBack) {
-                IconButton(
-                    onClick = { onAction(UsersAction.OnBackClick) },
-                    modifier = Modifier.padding(start = 8.dp),
+                Spacer(modifier = Modifier.weight(1f))
+            } else {
+                LazyColumn(
+                    verticalArrangement = Arrangement.spacedBy(12.dp),
+                    modifier = Modifier.fillMaxWidth().weight(1f),
                 ) {
-                    Icon(
-                        painter = painterResource(CoreR.drawable.ic_arrow_left),
-                        contentDescription = null,
-                    )
+                    items(state.users) { user ->
+                        UserItem(
+                            name = user.name,
+                            userId = user.id.toString(),
+                            primaryImageTag = user.primaryImageTag,
+                            modifier = Modifier.fillMaxWidth(),
+                            onClick = { onAction(UsersAction.OnUserClick(user = user)) },
+                            onLongClick = {
+                                selectedUserForDeletion = user
+                                openDeleteDialog = true
+                            },
+                        )
+                    }
+                    items(state.publicUsers) { user ->
+                        UserItem(
+                            name = user.name,
+                            userId = user.id.toString(),
+                            primaryImageTag = user.primaryImageTag,
+                            modifier = Modifier.fillMaxWidth().alpha(0.7f),
+                            onClick = {
+                                onAction(UsersAction.OnPublicUserClick(user = user))
+                            },
+                            onLongClick = {},
+                        )
+                    }
                 }
             }
+        }
+        if (showBack) {
             IconButton(
-                onClick = { onAction(UsersAction.OnChangeServerClick) },
-                modifier = Modifier.align(Alignment.TopEnd).padding(end = 8.dp),
+                onClick = { onAction(UsersAction.OnBackClick) },
+                modifier = Modifier.padding(start = 8.dp),
             ) {
-                Icon(painter = painterResource(CoreR.drawable.ic_server), contentDescription = null)
+                Icon(
+                    painter = painterResource(CoreR.drawable.ic_arrow_left),
+                    contentDescription = null,
+                )
             }
-            ExtendedFloatingActionButton(
-                onClick = { onAction(UsersAction.OnAddClick) },
-                icon = { Icon(painterResource(CoreR.drawable.ic_plus), contentDescription = null) },
-                text = { Text(text = stringResource(SetupR.string.users_btn_add_user)) },
-                modifier = Modifier.align(Alignment.BottomEnd).padding(24.dp),
-            )
         }
+        IconButton(
+            onClick = { onAction(UsersAction.OnChangeServerClick) },
+            modifier = Modifier.align(Alignment.TopEnd).padding(end = 8.dp),
+        ) {
+            Icon(painter = painterResource(CoreR.drawable.ic_server), contentDescription = null)
+        }
+        ExtendedFloatingActionButton(
+            onClick = { onAction(UsersAction.OnAddClick) },
+            icon = { Icon(painterResource(CoreR.drawable.ic_plus), contentDescription = null) },
+            text = { Text(text = stringResource(SetupR.string.users_btn_add_user)) },
+            modifier = Modifier.align(Alignment.BottomEnd).padding(24.dp),
+        )
+    }
 
-        if (state.showPinDialog) {
-            PinCodeDialog(
-                onDismissRequest = { onAction(UsersAction.OnDismissPinDialog) },
-                onPinSubmit = { pin -> onAction(UsersAction.OnPinSubmit(pin)) },
-                error = state.error
-            )
-        }
+    if (state.showPinDialog) {
+        PinCodeDialog(
+            onDismissRequest = { onAction(UsersAction.OnDismissPinDialog) },
+            onPinSubmit = { pin -> onAction(UsersAction.OnPinSubmit(pin)) },
+            error = state.error
+        )
+    }
 
-        if (openDeleteDialog && selectedUserForDeletion != null) {
-            AlertDialog(
-                title = { Text(text = stringResource(SetupR.string.remove_user_dialog)) },
-                text = {
-                    Text(
-                        text =
-                            stringResource(
-                                SetupR.string.remove_user_dialog_text,
-                                selectedUserForDeletion!!.name,
-                            )
-                    )
-                },
-                onDismissRequest = { openDeleteDialog = false },
-                confirmButton = {
-                    TextButton(
-                        onClick = {
-                            openDeleteDialog = false
-                            onAction(UsersAction.OnDeleteUser(selectedUserForDeletion!!.id))
-                        }
-                    ) {
-                        Text(text = stringResource(SetupR.string.confirm))
+    if (openDeleteDialog && selectedUserForDeletion != null) {
+        AlertDialog(
+            title = { Text(text = stringResource(SetupR.string.remove_user_dialog)) },
+            text = {
+                Text(
+                    text =
+                        stringResource(
+                            SetupR.string.remove_user_dialog_text,
+                            selectedUserForDeletion!!.name,
+                        )
+                )
+            },
+            onDismissRequest = { openDeleteDialog = false },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        openDeleteDialog = false
+                        onAction(UsersAction.OnDeleteUser(selectedUserForDeletion!!.id))
                     }
-                },
-                dismissButton = {
-                    TextButton(onClick = { openDeleteDialog = false }) {
-                        Text(text = stringResource(SetupR.string.cancel))
-                    }
-                },
-            )
-        }
+                ) {
+                    Text(text = stringResource(SetupR.string.confirm))
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { openDeleteDialog = false }) {
+                    Text(text = stringResource(SetupR.string.cancel))
+                }
+            },
+        )
     }
 }
 

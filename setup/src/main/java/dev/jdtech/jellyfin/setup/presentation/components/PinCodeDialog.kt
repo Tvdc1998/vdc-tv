@@ -35,6 +35,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
+import kotlinx.coroutines.delay
 
 @Composable
 fun PinCodeDialog(
@@ -43,7 +44,7 @@ fun PinCodeDialog(
     error: String? = null
 ) {
     var pin by remember { mutableStateOf("") }
-    val focusRequesters = remember { List(4) { FocusRequester() } }
+    val focusRequester = remember { FocusRequester() }
 
     Dialog(onDismissRequest = onDismissRequest) {
         Surface(
@@ -77,8 +78,7 @@ fun PinCodeDialog(
                                     width = if (isFocused) 3.dp else 1.dp,
                                     color = if (isFocused) MaterialTheme.colorScheme.primary else Color.Gray,
                                     shape = RoundedCornerShape(8.dp)
-                                )
-                                .focusRequester(focusRequesters[index]),
+                                ),
                             contentAlignment = Alignment.Center
                         ) {
                             Text(
@@ -109,8 +109,8 @@ fun PinCodeDialog(
                     },
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
                     modifier = Modifier
-                        .size(0.dp)
-                        .focusRequester(focusRequesters[0])
+                        .size(1.dp) // Minimum size to avoid layout issues
+                        .focusRequester(focusRequester)
                         .onKeyEvent { event ->
                             if (event.key == Key.Back && pin.isNotEmpty()) {
                                 pin = pin.dropLast(1)
@@ -122,7 +122,8 @@ fun PinCodeDialog(
                 )
 
                 LaunchedEffect(Unit) {
-                    focusRequesters[0].requestFocus()
+                    delay(100) // Delay focus request until dialog is fully placed
+                    focusRequester.requestFocus()
                 }
             }
         }
