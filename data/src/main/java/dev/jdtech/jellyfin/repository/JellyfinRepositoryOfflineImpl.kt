@@ -351,4 +351,22 @@ class JellyfinRepositoryOfflineImpl(
     override fun getUserId(): UUID {
         return jellyfinApi.userId!!
     }
+
+    override fun getPreferredAudioLanguage(): String? {
+        val userId = getUserId()
+        return if (userId != UUID(0L, 0L)) {
+            appPreferences.getValue(appPreferences.getUserPreferredAudioLanguage(userId))
+        } else {
+            appPreferences.getValue(appPreferences.preferredAudioLanguage)
+        }
+    }
+
+    override fun getPreferredSubtitleLanguage(): String? {
+        val userId = getUserId()
+        return if (userId != UUID(0L, 0L)) {
+            appPreferences.getValue(appPreferences.getUserPreferredSubtitleLanguage(userId))
+        } else {
+            appPreferences.getValue(appPreferences.preferredSubtitleLanguage)
+        }
+    }
 }

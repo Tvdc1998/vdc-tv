@@ -133,4 +133,8 @@ interface JellyfinRepository {
     suspend fun downloadRemoteSubtitle(itemId: UUID, remoteSubtitleId: String): Boolean
 
     fun getUserId(): UUID
+
+    fun getPreferredAudioLanguage(): String?
+
+    fun getPreferredSubtitleLanguage(): String?
 }

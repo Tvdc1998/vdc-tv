@@ -126,8 +126,8 @@ class SubtitlesViewModel @Inject constructor(
                     if (path != null) {
                         _events.send(SubtitlesEvent.SubtitleDownloaded(
                             url = path,
-                            title = newSubtitle?.title,
-                            language = newSubtitle?.language
+                            title = newSubtitle.title,
+                            language = newSubtitle.language
                         ))
                     } else {
                         // Fallback if we can't find it immediately in sources

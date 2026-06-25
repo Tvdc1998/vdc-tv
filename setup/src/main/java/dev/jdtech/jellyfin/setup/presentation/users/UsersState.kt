@@ -6,4 +6,7 @@ data class UsersState(
     val users: List<User> = emptyList(),
     val publicUsers: List<User> = emptyList(),
     val serverName: String? = null,
+    val selectedUser: User? = null,
+    val showPinDialog: Boolean = false,
+    val error: String? = null,
 )

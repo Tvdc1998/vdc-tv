@@ -2,67 +2,101 @@ package com.vdc.tv.setup.presentation.users
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.vdc.tv.setup.domain.SetupRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import java.util.UUID
 import javax.inject.Inject
 import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import timber.log.Timber
 
 @HiltViewModel
 class UsersViewModel @Inject constructor(private val repository: SetupRepository) : ViewModel() {
     private val _state = MutableStateFlow(UsersState())
-    val state = _state.asStateFlow()
+    val state: StateFlow<UsersState> = _state.asStateFlow()
 
     private val eventsChannel = Channel<UsersEvent>()
-    val events = eventsChannel.receiveAsFlow()
+    val events: Flow<UsersEvent> = eventsChannel.receiveAsFlow()
 
     fun loadUsers() {
         viewModelScope.launch {
-            val server = repository.getCurrentServer() ?: return@launch
-            val users = repository.getUsers(server.id)
-            val userIds = users.map { it.id }
-
-            _state.emit(UsersState(users = users, serverName = server.name))
-
             try {
+                val server = repository.getCurrentServer() ?: return@launch
+                val users = repository.getUsers(server.id)
                 val publicUsers = repository.getPublicUsers(server.id)
-                _state.emit(
-                    _state.value.copy(
-                        publicUsers = publicUsers.filterNot { userIds.contains(it.id) }
-                    )
-                )
-            } catch (_: Exception) {}
+
+                _state.update {
+                    it.copy(users = users, publicUsers = publicUsers, serverName = server.name)
+                }
+            } catch (e: Exception) {
+                Timber.e(e)
+            }
         }
     }
 
-    /**
-     * Delete user from database
-     *
-     * @param userId The id of the user
-     */
     private fun deleteUser(userId: UUID) {
         viewModelScope.launch {
-            repository.deleteUser(userId)
-            loadUsers()
+            try {
+                repository.deleteUser(userId)
+                loadUsers()
+            } catch (e: Exception) {
+                Timber.e(e)
+            }
         }
     }
 
     private fun loginAsUser(userId: UUID) {
         viewModelScope.launch {
-            repository.setCurrentUser(userId)
+            try {
+                repository.setCurrentUser(userId)
+                eventsChannel.send(UsersEvent.NavigateToHome)
+            } catch (e: Exception) {
+                Timber.e(e)
+            }
+        }
+    }
 
-            eventsChannel.send(UsersEvent.NavigateToHome)
+    private fun loginWithPin(username: String, pin: String) {
+        viewModelScope.launch {
+            try {
+                _state.update { it.copy(error = null) }
+                repository.login(username, pin)
+                eventsChannel.send(UsersEvent.NavigateToHome)
+            } catch (e: Exception) {
+                Timber.e(e)
+                _state.update { it.copy(error = "Invalid PIN") }
+            }
         }
     }
 
     fun onAction(action: UsersAction) {
         when (action) {
             is UsersAction.OnUserClick -> {
-                loginAsUser(action.userId)
+                if (action.user.hasPassword) {
+                    _state.update { it.copy(selectedUser = action.user, showPinDialog = true) }
+                } else {
+                    loginAsUser(action.user.id)
+                }
+            }
+            is UsersAction.OnPublicUserClick -> {
+                if (action.user.hasPassword) {
+                    _state.update { it.copy(selectedUser = action.user, showPinDialog = true) }
+                } else {
+                    loginAsUser(action.user.id)
+                }
+            }
+            is UsersAction.OnPinSubmit -> {
+                val user = _state.value.selectedUser ?: return
+                loginWithPin(user.name, action.pin)
+            }
+            is UsersAction.OnDismissPinDialog -> {
+                _state.update { it.copy(showPinDialog = false, selectedUser = null, error = null) }
             }
             is UsersAction.OnDeleteUser -> {
                 deleteUser(action.userId)

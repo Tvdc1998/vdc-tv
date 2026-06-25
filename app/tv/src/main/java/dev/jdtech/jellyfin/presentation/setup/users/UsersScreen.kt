@@ -32,6 +32,7 @@ import androidx.tv.material3.OutlinedButton
 import androidx.tv.material3.Text
 import com.vdc.tv.api.JellyfinApi
 import com.vdc.tv.core.presentation.dummy.dummyUsers
+import com.vdc.tv.presentation.setup.components.PinCodeDialog
 import com.vdc.tv.presentation.setup.components.UserItem
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
@@ -68,7 +69,7 @@ fun UsersScreen(
             when (action) {
                 is UsersAction.OnChangeServerClick -> onChangeServerClick()
                 is UsersAction.OnAddClick -> onAddClick()
-                is UsersAction.OnPublicUserClick -> onPublicUserClick(action.username)
+                is UsersAction.OnPublicUserClick -> onPublicUserClick(action.user.name)
                 else -> Unit
             }
             viewModel.onAction(action)
@@ -111,7 +112,7 @@ private fun UsersScreenLayout(state: UsersState, onAction: (UsersAction) -> Unit
                         UserItem(
                             user = it,
                             modifier = Modifier.padding(8.dp),
-                            onClick = { user -> onAction(UsersAction.OnUserClick(user.id)) },
+                            onClick = { user -> onAction(UsersAction.OnUserClick(user)) },
                             baseUrl = baseUrl,
                         )
                     }
@@ -120,7 +121,7 @@ private fun UsersScreenLayout(state: UsersState, onAction: (UsersAction) -> Unit
                             user = it,
                             modifier = Modifier.alpha(0.7f).padding(8.dp),
                             onClick = { user ->
-                                onAction(UsersAction.OnPublicUserClick(username = user.name))
+                                onAction(UsersAction.OnPublicUserClick(user))
                             },
                             baseUrl = baseUrl,
                         )
@@ -132,6 +133,14 @@ private fun UsersScreenLayout(state: UsersState, onAction: (UsersAction) -> Unit
             OutlinedButton(onClick = { onAction(UsersAction.OnAddClick) }) {
                 Text(text = stringResource(id = SetupR.string.users_btn_add_user))
             }
+        }
+
+        if (state.showPinDialog) {
+            PinCodeDialog(
+                onDismissRequest = { onAction(UsersAction.OnDismissPinDialog) },
+                onPinSubmit = { pin -> onAction(UsersAction.OnPinSubmit(pin)) },
+                error = state.error
+            )
         }
     }
 }

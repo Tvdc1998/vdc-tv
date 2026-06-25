@@ -2,15 +2,15 @@
 ![VDC Tv banner](images/vdc_tv_banner.png)
 VDC TV is a VdC Studios Android application for Jellyfin that provides a native user interface to browse and play movies and series.
 
-
-
 This project is a customized fork focusing on a clean, native experience for both phone and Android TV.
-
 
 ## Features
 - **Completely native interface**
 - **Dual Engine Support**: Choose between ExoPlayer and MPV for the best playback compatibility.
 - **Android TV Support**: Fully optimized UI for big screens with remote control navigation.
+- **Next Episode Binge-Watch Pop-up**: Subtle overlay appearing 20s before the end with a countdown and "Play Now" button for seamless binge-watching.
+- **Smart Audio & Subtitle Selection**: Remembers language preferences per profile (e.g., Dutch audio for kids, Original audio for adults) and applies them automatically.
+- **TV PIN Code Login**: Optimized 4-digit PIN input for password-protected profiles on Android TV, designed for remote control use.
 - **Live Subtitle Downloads**: Download subtitles mid-playback and see them appear instantly in the selection menu.
 - **Thumbnail View**: Support for high-quality server-side thumbnails in library views.
 - **Offline playback / downloads**
@@ -29,7 +29,6 @@ This project is a customized fork focusing on a clean, native experience for bot
 
 ## Development
 This application is built with Kotlin and Jetpack Compose.
-
 
 ## License
 This project is licensed under the GPLv3 License.

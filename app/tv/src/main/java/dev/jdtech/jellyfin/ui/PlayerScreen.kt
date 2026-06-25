@@ -3,11 +3,13 @@ package com.vdc.tv.ui
 import androidx.compose.foundation.focusable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -27,7 +29,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.zIndex
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
@@ -117,9 +121,10 @@ fun PlayerScreen(
     var isPlaying by remember { mutableStateOf(viewModel.player.isPlaying) }
     LaunchedEffect(Unit) {
         while (true) {
-            delay(300)
+            delay(1000)
             currentPosition = viewModel.player.currentPosition
             isPlaying = viewModel.player.isPlaying
+            viewModel.updateCurrentSegment()
         }
     }
 
@@ -167,6 +172,21 @@ fun PlayerScreen(
             if (!videoPlayerState.controlsVisible) {
                 skipButtonFocusRequester.requestFocus()
             }
+        }
+    }
+
+    // Next Episode Pop-up
+    if (uiState.nextEpisodePopupVisible && !videoPlayerState.controlsVisible) {
+        val nextEpisodeFocusRequester = remember { FocusRequester() }
+
+        NextEpisodePopup(
+            countdown = uiState.nextEpisodeCountdown,
+            onPlayNowClick = { viewModel.playNextEpisode() },
+            focusRequester = nextEpisodeFocusRequester,
+        )
+
+        LaunchedEffect(Unit) {
+            nextEpisodeFocusRequester.requestFocus()
         }
     }
 
@@ -302,6 +322,49 @@ fun VideoPlayerControls(
             }
         },
     )
+}
+
+@Composable
+private fun NextEpisodePopup(
+    countdown: Int,
+    onPlayNowClick: () -> Unit,
+    focusRequester: FocusRequester,
+) {
+    Box(
+        modifier = Modifier.fillMaxSize().padding(MaterialTheme.spacings.large).zIndex(1f),
+        contentAlignment = Alignment.BottomEnd,
+    ) {
+        Button(
+            onClick = onPlayNowClick,
+            modifier = Modifier.focusRequester(focusRequester),
+            glow =
+                ButtonDefaults.glow(
+                    focusedGlow = Glow(elevationColor = Color.Gray, elevation = 20.dp)
+                ),
+        ) {
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(
+                    text = stringResource(R.string.player_binge_watch_message, countdown),
+                    color = Color.Black,
+                    fontSize = 14.sp,
+                )
+                Spacer(Modifier.size(4.dp))
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        painter = painterResource(id = R.drawable.ic_skip_forward),
+                        contentDescription = null,
+                        modifier = Modifier.size(16.dp),
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Text(
+                        text = stringResource(R.string.player_play_now),
+                        color = Color.Black,
+                        fontWeight = FontWeight.Bold,
+                    )
+                }
+            }
+        }
+    }
 }
 
 @Composable

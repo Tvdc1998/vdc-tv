@@ -236,7 +236,8 @@ class SetupRepositoryImpl(
                 name = authenticationResult.user!!.name!!,
                 serverId = authenticationResult.serverId!!,
                 accessToken = authenticationResult.accessToken!!,
-                primaryImageTag = authenticationResult.user!!.primaryImageTag
+                primaryImageTag = authenticationResult.user!!.primaryImageTag,
+                hasPassword = true
             )
 
         database.insertUser(user)
@@ -246,6 +247,7 @@ class SetupRepositoryImpl(
             api.update(accessToken = authenticationResult.accessToken)
             accessToken = authenticationResult.accessToken
             userId = authenticationResult.user?.id
+            appPreferences.currentUserId = authenticationResult.user?.id
         }
     }
 
@@ -260,7 +262,8 @@ class SetupRepositoryImpl(
                     id = it.id,
                     name = it.name ?: return@mapNotNull null,
                     serverId = serverId,
-                    primaryImageTag = it.primaryImageTag
+                    primaryImageTag = it.primaryImageTag,
+                    hasPassword = it.hasPassword
                 )
             }
         }
@@ -293,6 +296,7 @@ class SetupRepositoryImpl(
             api.update(baseUrl = serverAddress?.address ?: api.baseUrl, accessToken = user.accessToken)
             accessToken = user.accessToken
             this.userId = user.id
+            appPreferences.currentUserId = user.id
         }
     }
 

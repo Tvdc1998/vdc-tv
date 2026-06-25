@@ -74,6 +74,7 @@ constructor(private val appPreferences: AppPreferences, private val database: Se
             serverId?.let { id ->
                 database.getServerWithAddressAndUser(id)?.let { data ->
                     _uiState.emit(UiState.Normal(data.server, data.user))
+                    appPreferences.currentUserId = data.user?.id
                 }
             }
         }

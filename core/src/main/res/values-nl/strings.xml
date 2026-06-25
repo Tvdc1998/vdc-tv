@@ -110,4 +110,6 @@
     <string name="no_subtitles_found">Geen ondertitels gevonden</string>
     <string name="thumbnails">Miniaturen</string>
     <string name="posters">Posters</string>
+    <string name="player_binge_watch_message">Volgende aflevering begint over %d seconden</string>
+    <string name="player_play_now">Nu afspelen</string>
 </resources>

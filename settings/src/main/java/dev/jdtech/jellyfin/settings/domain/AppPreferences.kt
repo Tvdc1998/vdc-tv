@@ -2,16 +2,25 @@ package com.vdc.tv.settings.domain
 
 import android.content.SharedPreferences
 import com.vdc.tv.settings.domain.models.Preference
+import java.util.UUID
 import javax.inject.Inject
 import timber.log.Timber
 
 class AppPreferences @Inject constructor(val sharedPreferences: SharedPreferences) {
+    var currentUserId: UUID? = null
+
     // Server
     val currentServer = Preference<String?>("pref_current_server", null)
 
     // Language
     val preferredAudioLanguage = Preference<String?>("pref_audio_language", null)
     val preferredSubtitleLanguage = Preference<String?>("pref_subtitle_language", null)
+
+    fun getUserPreferredAudioLanguage(userId: UUID) =
+        Preference<String?>("pref_audio_language_$userId", getValueInternal(preferredAudioLanguage))
+
+    fun getUserPreferredSubtitleLanguage(userId: UUID) =
+        Preference<String?>("pref_subtitle_language_$userId", getValueInternal(preferredSubtitleLanguage))
 
     // Interface
     val theme = Preference("pref_theme", "system")
@@ -78,6 +87,9 @@ class AppPreferences @Inject constructor(val sharedPreferences: SharedPreference
     val playerMediaSegmentsNextEpisodeThreshold
         get() = Preference("pref_player_media_segments_next_episode_threshold", 5_000L)
 
+    val playerBingeWatchThreshold
+        get() = Preference("pref_player_binge_watch_threshold", 20_000L)
+
     // Player - trickplay
     val playerTrickplay = Preference("pref_player_trickplay", true)
 
@@ -108,6 +120,22 @@ class AppPreferences @Inject constructor(val sharedPreferences: SharedPreference
     val offlineMode = Preference("pref_offline_mode", false)
 
     inline fun <reified T> getValue(preference: Preference<T>): T {
+        val actualPreference = if (currentUserId != null && (preference == preferredAudioLanguage || preference == preferredSubtitleLanguage)) {
+            val userId = currentUserId!!
+            if (preference == preferredAudioLanguage) {
+                getUserPreferredAudioLanguage(userId)
+            } else {
+                getUserPreferredSubtitleLanguage(userId)
+            }
+        } else {
+            preference
+        }
+        @Suppress("UNCHECKED_CAST")
+        return getValueInternal(actualPreference as Preference<T>)
+    }
+
+    @PublishedApi
+    internal inline fun <reified T> getValueInternal(preference: Preference<T>): T {
         return try {
             @Suppress("UNCHECKED_CAST")
             when (preference.defaultValue) {
@@ -134,12 +162,28 @@ class AppPreferences @Inject constructor(val sharedPreferences: SharedPreference
             Timber.w(
                 "Failed to load ${preference.backendName} preference. Resetting to default value..."
             )
-            setValue(preference, preference.defaultValue)
+            setValueInternal(preference, preference.defaultValue)
             preference.defaultValue
         }
     }
 
     inline fun <reified T> setValue(preference: Preference<T>, value: T) {
+        val actualPreference = if (currentUserId != null && (preference == preferredAudioLanguage || preference == preferredSubtitleLanguage)) {
+            val userId = currentUserId!!
+            if (preference == preferredAudioLanguage) {
+                getUserPreferredAudioLanguage(userId)
+            } else {
+                getUserPreferredSubtitleLanguage(userId)
+            }
+        } else {
+            preference
+        }
+        @Suppress("UNCHECKED_CAST")
+        setValueInternal(actualPreference as Preference<T>, value)
+    }
+
+    @PublishedApi
+    internal inline fun <reified T> setValueInternal(preference: Preference<T>, value: T) {
         val editor = sharedPreferences.edit()
         @Suppress("UNCHECKED_CAST")
         when (preference.defaultValue) {

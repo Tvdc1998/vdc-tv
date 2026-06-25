@@ -24,4 +24,5 @@ data class User(
     @ColumnInfo(index = true) val serverId: String,
     val accessToken: String? = null,
     val primaryImageTag: String? = null,
+    @ColumnInfo(defaultValue = "0") val hasPassword: Boolean = false,
 )

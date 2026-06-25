@@ -88,4 +88,45 @@
         tools:text="@string/player_controls_skip_intro"
         tools:visibility="visible" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/binge_watch_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/player_background"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/binge_watch_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="Next episode starts in 20 seconds" />
+
+            <Button
+                android:id="@+id/btn_play_now"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/player_play_now"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/ic_skip_forward"
+                app:iconTint="@android:color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </merge>

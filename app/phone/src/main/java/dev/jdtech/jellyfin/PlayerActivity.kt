@@ -34,6 +34,7 @@ import androidx.media3.ui.DefaultTimeBar
 import androidx.media3.ui.PlayerControlView
 import androidx.media3.ui.PlayerView
 import dagger.hilt.android.AndroidEntryPoint
+import com.vdc.tv.R
 import com.vdc.tv.databinding.ActivityPlayerBinding
 import com.vdc.tv.player.local.presentation.PlayerEvents
 import com.vdc.tv.player.local.presentation.PlayerViewModel
@@ -141,6 +142,14 @@ class PlayerActivity : BasePlayerActivity() {
         val lockButton = binding.playerView.findViewById<ImageButton>(R.id.btn_lockview)
         val unlockButton = binding.playerView.findViewById<ImageButton>(R.id.btn_unlock)
 
+        val bingeWatchPopup = binding.playerView.findViewById<View>(R.id.binge_watch_popup)
+        val bingeWatchMessage = binding.playerView.findViewById<TextView>(R.id.binge_watch_message)
+        val playNowButton = binding.playerView.findViewById<Button>(R.id.btn_play_now)
+
+        playNowButton.setOnClickListener {
+            viewModel.playNextEpisode()
+        }
+
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 launch {
@@ -170,6 +179,12 @@ class PlayerActivity : BasePlayerActivity() {
                                     skipSegmentButton.isVisible = false
                                 }
                             } ?: run { skipSegmentButton.isVisible = false }
+
+                            // Binge Watch Popup
+                            bingeWatchPopup.isVisible = nextEpisodePopupVisible && !isInPictureInPictureMode
+                            if (nextEpisodePopupVisible) {
+                                bingeWatchMessage.text = getString(com.vdc.tv.core.R.string.player_binge_watch_message, nextEpisodeCountdown)
+                            }
 
                             binding.playerView.setControllerVisibilityListener(
                                 PlayerView.ControllerVisibilityListener { visibility ->

@@ -74,7 +74,7 @@ fun UsersScreen(
                 is UsersAction.OnChangeServerClick -> onChangeServerClick()
                 is UsersAction.OnAddClick -> onAddClick()
                 is UsersAction.OnBackClick -> onBackClick()
-                is UsersAction.OnPublicUserClick -> onPublicUserClick(action.username)
+                is UsersAction.OnPublicUserClick -> onPublicUserClick(action.user.name)
                 else -> Unit
             }
             viewModel.onAction(action)
@@ -132,7 +132,7 @@ private fun UsersScreenLayout(
                             userId = user.id.toString(),
                             primaryImageTag = user.primaryImageTag,
                             modifier = Modifier.fillMaxWidth(),
-                            onClick = { onAction(UsersAction.OnUserClick(userId = user.id)) },
+                            onClick = { onAction(UsersAction.OnUserClick(user = user)) },
                             onLongClick = {
                                 selectedUser = user
                                 openDeleteDialog = true
@@ -146,7 +146,7 @@ private fun UsersScreenLayout(
                             primaryImageTag = user.primaryImageTag,
                             modifier = Modifier.fillMaxWidth().alpha(0.7f),
                             onClick = {
-                                onAction(UsersAction.OnPublicUserClick(username = user.name))
+                                onAction(UsersAction.OnPublicUserClick(user = user))
                             },
                             onLongClick = {},
                         )

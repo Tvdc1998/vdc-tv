@@ -116,4 +116,6 @@
     <string name="no_subtitles_found">No subtitles found</string>
     <string name="thumbnails">Thumbnails</string>
     <string name="posters">Posters</string>
+    <string name="player_binge_watch_message">Next episode starts in %d seconds</string>
+    <string name="player_play_now">Play Now</string>
 </resources>

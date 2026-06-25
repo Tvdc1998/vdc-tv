@@ -82,6 +82,8 @@ constructor(
         val currentTrickplay: Trickplay?,
         val currentChapters: List<PlayerChapter>,
         val fileLoaded: Boolean,
+        val nextEpisodePopupVisible: Boolean = false,
+        val nextEpisodeCountdown: Int = 0,
     )
 
     private var items: MutableList<PlayerItem> = mutableListOf()
@@ -126,12 +128,8 @@ constructor(
             trackSelector
                 .buildUponParameters()
                 .setTunnelingEnabled(true)
-                .setPreferredAudioLanguage(
-                    appPreferences.getValue(appPreferences.preferredAudioLanguage)
-                )
-                .setPreferredTextLanguage(
-                    appPreferences.getValue(appPreferences.preferredSubtitleLanguage)
-                )
+                .setPreferredAudioLanguage(repository.getPreferredAudioLanguage())
+                .setPreferredTextLanguage(repository.getPreferredSubtitleLanguage())
         )
 
         if (appPreferences.getValue(appPreferences.playerMpv)) {
@@ -293,6 +291,39 @@ constructor(
     fun updateCurrentSegment() {
         Timber.d("Updating current segment")
         viewModelScope.launch(Dispatchers.Main) {
+            val bingeWatchThreshold = appPreferences.getValue(appPreferences.playerBingeWatchThreshold)
+            val duration = player.duration
+            val position = player.currentPosition
+
+            if (duration > 0 && player.hasNextMediaItem()) {
+                val remainingTime = duration - position
+                val currentSegment = if (currentMediaItemSegments.isNotEmpty()) {
+                    currentMediaItemSegments.find { it.type == FindroidSegmentType.OUTRO && position in it.startTicks..<it.endTicks }
+                } else null
+
+                if (currentSegment != null) {
+                    val segmentRemaining = currentSegment.endTicks - position
+                    val countdown = (segmentRemaining / 1000).toInt().coerceAtLeast(0)
+                    _uiState.update { it.copy(nextEpisodePopupVisible = true, nextEpisodeCountdown = countdown) }
+                    if (countdown <= 0) {
+                        playNextEpisode()
+                    }
+                    return@launch
+                } else if (remainingTime <= bingeWatchThreshold) {
+                    val countdown = (remainingTime / 1000).toInt().coerceAtLeast(0)
+                    _uiState.update { it.copy(nextEpisodePopupVisible = true, nextEpisodeCountdown = countdown) }
+                    if (countdown <= 0) {
+                        playNextEpisode()
+                    }
+                    return@launch
+                }
+            }
+
+            // If not in binge watch zone, ensure popup is hidden
+            if (_uiState.value.nextEpisodePopupVisible) {
+                _uiState.update { it.copy(nextEpisodePopupVisible = false) }
+            }
+
             if (currentMediaItemSegments.isEmpty()) {
                 return@launch
             }
@@ -448,6 +479,13 @@ constructor(
             }
         }
         Timber.d("Changed player state to $stateString")
+    }
+
+    fun playNextEpisode() {
+        if (player.hasNextMediaItem()) {
+            player.seekToNextMediaItem()
+            _uiState.update { it.copy(nextEpisodePopupVisible = false) }
+        }
     }
 
     override fun onCleared() {
