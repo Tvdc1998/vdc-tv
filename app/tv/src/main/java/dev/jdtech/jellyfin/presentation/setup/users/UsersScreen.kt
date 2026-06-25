@@ -32,11 +32,11 @@ import androidx.tv.material3.OutlinedButton
 import androidx.tv.material3.Text
 import com.vdc.tv.api.JellyfinApi
 import com.vdc.tv.core.presentation.dummy.dummyUsers
-import com.vdc.tv.presentation.setup.components.PinCodeDialog
 import com.vdc.tv.presentation.setup.components.UserItem
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.presentation.theme.spacings
 import com.vdc.tv.setup.R as SetupR
+import com.vdc.tv.setup.presentation.components.PinCodeDialog
 import com.vdc.tv.setup.presentation.users.UsersAction
 import com.vdc.tv.setup.presentation.users.UsersEvent
 import com.vdc.tv.setup.presentation.users.UsersState

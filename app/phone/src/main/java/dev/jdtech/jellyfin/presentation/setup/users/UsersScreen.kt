@@ -2,8 +2,10 @@ package com.vdc.tv.presentation.setup.users
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -39,6 +41,7 @@ import com.vdc.tv.presentation.setup.components.RootLayout
 import com.vdc.tv.presentation.setup.components.UserItem
 import com.vdc.tv.presentation.theme.FindroidTheme
 import com.vdc.tv.setup.R as SetupR
+import com.vdc.tv.setup.presentation.components.PinCodeDialog
 import com.vdc.tv.setup.presentation.users.UsersAction
 import com.vdc.tv.setup.presentation.users.UsersEvent
 import com.vdc.tv.setup.presentation.users.UsersState
@@ -89,96 +92,106 @@ private fun UsersScreenLayout(
     onAction: (UsersAction) -> Unit,
 ) {
     var openDeleteDialog by remember { mutableStateOf(false) }
-    var selectedUser by remember { mutableStateOf<User?>(null) }
+    var selectedUserForDeletion by remember { mutableStateOf<User?>(null) }
 
     RootLayout {
-        Column(
-            modifier =
-                Modifier.padding(horizontal = 24.dp)
-                    .widthIn(max = 480.dp)
-                    .fillMaxWidth()
-                    .align(Alignment.Center)
-        ) {
-            Spacer(modifier = Modifier.weight(0.2f))
-            Image(
-                painter = painterResource(id = CoreR.drawable.vdcstudios_banner),
-                contentDescription = null,
-                modifier = Modifier.width(250.dp).align(Alignment.CenterHorizontally),
-            )
-            Spacer(modifier = Modifier.height(32.dp))
-            Text(
-                text = stringResource(SetupR.string.users),
-                style = MaterialTheme.typography.headlineMedium,
-            )
-            Text(
-                text = stringResource(SetupR.string.server_subtitle, state.serverName ?: ""),
-                style = MaterialTheme.typography.titleMedium,
-            )
-            Spacer(modifier = Modifier.height(24.dp))
-            if (state.users.isEmpty() && state.publicUsers.isEmpty()) {
-                Text(
-                    text = stringResource(SetupR.string.users_no_users),
-                    style = MaterialTheme.typography.bodyMedium,
+        Box(modifier = Modifier.fillMaxSize()) {
+            Column(
+                modifier =
+                    Modifier.padding(horizontal = 24.dp)
+                        .widthIn(max = 480.dp)
+                        .fillMaxWidth()
+                        .align(Alignment.Center)
+            ) {
+                Spacer(modifier = Modifier.weight(0.2f))
+                Image(
+                    painter = painterResource(id = CoreR.drawable.vdcstudios_banner),
+                    contentDescription = null,
+                    modifier = Modifier.width(250.dp).align(Alignment.CenterHorizontally),
                 )
-                Spacer(modifier = Modifier.weight(1f))
-            } else {
-                LazyColumn(
-                    verticalArrangement = Arrangement.spacedBy(12.dp),
-                    modifier = Modifier.fillMaxWidth().weight(1f),
-                ) {
-                    items(state.users) { user ->
-                        UserItem(
-                            name = user.name,
-                            userId = user.id.toString(),
-                            primaryImageTag = user.primaryImageTag,
-                            modifier = Modifier.fillMaxWidth(),
-                            onClick = { onAction(UsersAction.OnUserClick(user = user)) },
-                            onLongClick = {
-                                selectedUser = user
-                                openDeleteDialog = true
-                            },
-                        )
-                    }
-                    items(state.publicUsers) { user ->
-                        UserItem(
-                            name = user.name,
-                            userId = user.id.toString(),
-                            primaryImageTag = user.primaryImageTag,
-                            modifier = Modifier.fillMaxWidth().alpha(0.7f),
-                            onClick = {
-                                onAction(UsersAction.OnPublicUserClick(user = user))
-                            },
-                            onLongClick = {},
-                        )
+                Spacer(modifier = Modifier.height(32.dp))
+                Text(
+                    text = stringResource(SetupR.string.users),
+                    style = MaterialTheme.typography.headlineMedium,
+                )
+                Text(
+                    text = stringResource(SetupR.string.server_subtitle, state.serverName ?: ""),
+                    style = MaterialTheme.typography.titleMedium,
+                )
+                Spacer(modifier = Modifier.height(24.dp))
+                if (state.users.isEmpty() && state.publicUsers.isEmpty()) {
+                    Text(
+                        text = stringResource(SetupR.string.users_no_users),
+                        style = MaterialTheme.typography.bodyMedium,
+                    )
+                    Spacer(modifier = Modifier.weight(1f))
+                } else {
+                    LazyColumn(
+                        verticalArrangement = Arrangement.spacedBy(12.dp),
+                        modifier = Modifier.fillMaxWidth().weight(1f),
+                    ) {
+                        items(state.users) { user ->
+                            UserItem(
+                                name = user.name,
+                                userId = user.id.toString(),
+                                primaryImageTag = user.primaryImageTag,
+                                modifier = Modifier.fillMaxWidth(),
+                                onClick = { onAction(UsersAction.OnUserClick(user = user)) },
+                                onLongClick = {
+                                    selectedUserForDeletion = user
+                                    openDeleteDialog = true
+                                },
+                            )
+                        }
+                        items(state.publicUsers) { user ->
+                            UserItem(
+                                name = user.name,
+                                userId = user.id.toString(),
+                                primaryImageTag = user.primaryImageTag,
+                                modifier = Modifier.fillMaxWidth().alpha(0.7f),
+                                onClick = {
+                                    onAction(UsersAction.OnPublicUserClick(user = user))
+                                },
+                                onLongClick = {},
+                            )
+                        }
                     }
                 }
             }
-        }
-        if (showBack) {
-            IconButton(
-                onClick = { onAction(UsersAction.OnBackClick) },
-                modifier = Modifier.padding(start = 8.dp),
-            ) {
-                Icon(
-                    painter = painterResource(CoreR.drawable.ic_arrow_left),
-                    contentDescription = null,
-                )
+            if (showBack) {
+                IconButton(
+                    onClick = { onAction(UsersAction.OnBackClick) },
+                    modifier = Modifier.padding(start = 8.dp),
+                ) {
+                    Icon(
+                        painter = painterResource(CoreR.drawable.ic_arrow_left),
+                        contentDescription = null,
+                    )
+                }
             }
+            IconButton(
+                onClick = { onAction(UsersAction.OnChangeServerClick) },
+                modifier = Modifier.align(Alignment.TopEnd).padding(end = 8.dp),
+            ) {
+                Icon(painter = painterResource(CoreR.drawable.ic_server), contentDescription = null)
+            }
+            ExtendedFloatingActionButton(
+                onClick = { onAction(UsersAction.OnAddClick) },
+                icon = { Icon(painterResource(CoreR.drawable.ic_plus), contentDescription = null) },
+                text = { Text(text = stringResource(SetupR.string.users_btn_add_user)) },
+                modifier = Modifier.align(Alignment.BottomEnd).padding(24.dp),
+            )
         }
-        IconButton(
-            onClick = { onAction(UsersAction.OnChangeServerClick) },
-            modifier = Modifier.align(Alignment.TopEnd).padding(end = 8.dp),
-        ) {
-            Icon(painter = painterResource(CoreR.drawable.ic_server), contentDescription = null)
-        }
-        ExtendedFloatingActionButton(
-            onClick = { onAction(UsersAction.OnAddClick) },
-            icon = { Icon(painterResource(CoreR.drawable.ic_plus), contentDescription = null) },
-            text = { Text(text = stringResource(SetupR.string.users_btn_add_user)) },
-            modifier = Modifier.align(Alignment.BottomEnd).padding(24.dp),
-        )
 
-        if (openDeleteDialog && selectedUser != null) {
+        if (state.showPinDialog) {
+            PinCodeDialog(
+                onDismissRequest = { onAction(UsersAction.OnDismissPinDialog) },
+                onPinSubmit = { pin -> onAction(UsersAction.OnPinSubmit(pin)) },
+                error = state.error
+            )
+        }
+
+        if (openDeleteDialog && selectedUserForDeletion != null) {
             AlertDialog(
                 title = { Text(text = stringResource(SetupR.string.remove_user_dialog)) },
                 text = {
@@ -186,7 +199,7 @@ private fun UsersScreenLayout(
                         text =
                             stringResource(
                                 SetupR.string.remove_user_dialog_text,
-                                selectedUser!!.name,
+                                selectedUserForDeletion!!.name,
                             )
                     )
                 },
@@ -195,7 +208,7 @@ private fun UsersScreenLayout(
                     TextButton(
                         onClick = {
                             openDeleteDialog = false
-                            onAction(UsersAction.OnDeleteUser(selectedUser!!.id))
+                            onAction(UsersAction.OnDeleteUser(selectedUserForDeletion!!.id))
                         }
                     ) {
                         Text(text = stringResource(SetupR.string.confirm))

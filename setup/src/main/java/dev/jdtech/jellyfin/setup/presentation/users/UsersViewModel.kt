@@ -30,9 +30,17 @@ class UsersViewModel @Inject constructor(private val repository: SetupRepository
                 val server = repository.getCurrentServer() ?: return@launch
                 val users = repository.getUsers(server.id)
                 val publicUsers = repository.getPublicUsers(server.id)
+                
+                // Filter out public users that are already in the local database
+                val localUserIds = users.map { it.id }.toSet()
+                val uniquePublicUsers = publicUsers.filter { it.id !in localUserIds }
 
                 _state.update {
-                    it.copy(users = users, publicUsers = publicUsers, serverName = server.name)
+                    it.copy(
+                        users = users, 
+                        publicUsers = uniquePublicUsers, 
+                        serverName = server.name
+                    )
                 }
             } catch (e: Exception) {
                 Timber.e(e)
