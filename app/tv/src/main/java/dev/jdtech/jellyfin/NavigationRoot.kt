@@ -2,6 +2,7 @@ package com.vdc.tv
 
 import android.os.Parcel
 import android.os.Parcelable
+import androidx.annotation.Keep
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -46,18 +47,19 @@ inline fun <reified T : Parcelable> String.base64ToParcelable(): T {
     return item
 }
 
-@Serializable data object WelcomeRoute
+@Keep @Serializable data object WelcomeRoute
 
-@Serializable data object ServersRoute
+@Keep @Serializable data object ServersRoute
 
-@Serializable data object AddServerRoute
+@Keep @Serializable data object AddServerRoute
 
-@Serializable data object UsersRoute
+@Keep @Serializable data object UsersRoute
 
-@Serializable data class LoginRoute(val username: String? = null)
+@Keep @Serializable data class LoginRoute(val username: String? = null)
 
-@Serializable data object MainRoute
+@Keep @Serializable data object MainRoute
 
+@Keep
 @Serializable
 data class LibraryRoute(
     val libraryId: String,
@@ -65,17 +67,17 @@ data class LibraryRoute(
     val libraryType: CollectionType,
 )
 
-@Serializable data class MovieRoute(val itemId: String)
+@Keep @Serializable data class MovieRoute(val itemId: String)
 
-@Serializable data class ShowRoute(val itemId: String)
+@Keep @Serializable data class ShowRoute(val itemId: String)
 
-@Serializable data class SeasonRoute(val seasonId: String)
+@Keep @Serializable data class SeasonRoute(val seasonId: String)
 
-@Serializable data class PlayerRoute(val itemId: String, val itemKind: String)
+@Keep @Serializable data class PlayerRoute(val itemId: String, val itemKind: String)
 
-@Serializable data object SettingsRoute
+@Keep @Serializable data object SettingsRoute
 
-@Serializable data class SettingsSubRoute(val indexes: IntArray)
+@Keep @Serializable data class SettingsSubRoute(val indexes: IntArray)
 
 @OptIn(ExperimentalStdlibApi::class)
 @Composable

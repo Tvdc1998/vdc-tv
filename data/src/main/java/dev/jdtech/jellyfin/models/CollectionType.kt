@@ -1,5 +1,8 @@
 package com.vdc.tv.models
 
+import androidx.annotation.Keep
+
+@Keep
 enum class CollectionType(val type: String) {
     Movies("movies"),
     TvShows("tvshows"),

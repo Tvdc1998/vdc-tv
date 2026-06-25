@@ -30,3 +30,4 @@
 -dontwarn org.openjsse.net.ssl.OpenJSSE
 
 -keep class dev.jdtech.**
+-keep class com.vdc.tv.**

@@ -1,6 +1,7 @@
 package com.vdc.tv
 
 import androidx.annotation.DrawableRes
+import androidx.annotation.Keep
 import androidx.annotation.StringRes
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -63,24 +64,25 @@ import com.vdc.tv.presentation.utils.LocalOfflineMode
 import java.util.UUID
 import kotlinx.serialization.Serializable
 
-@Serializable data object WelcomeRoute
+@Keep @Serializable data object WelcomeRoute
 
-@Serializable data object ServersRoute
+@Keep @Serializable data object ServersRoute
 
-@Serializable data object AddServerRoute
+@Keep @Serializable data object AddServerRoute
 
-@Serializable data class ServerAddressesRoute(val serverId: String)
+@Keep @Serializable data class ServerAddressesRoute(val serverId: String)
 
-@Serializable data object UsersRoute
+@Keep @Serializable data object UsersRoute
 
-@Serializable data class LoginRoute(val username: String? = null)
+@Keep @Serializable data class LoginRoute(val username: String? = null)
 
-@Serializable data object HomeRoute
+@Keep @Serializable data object HomeRoute
 
-@Serializable data object MediaRoute
+@Keep @Serializable data object MediaRoute
 
-@Serializable data object DownloadsRoute
+@Keep @Serializable data object DownloadsRoute
 
+@Keep
 @Serializable
 data class LibraryRoute(
     val libraryId: String,
@@ -88,23 +90,23 @@ data class LibraryRoute(
     val libraryType: CollectionType,
 )
 
-@Serializable data class CollectionRoute(val collectionId: String, val collectionName: String)
+@Keep @Serializable data class CollectionRoute(val collectionId: String, val collectionName: String)
 
-@Serializable data object FavoritesRoute
+@Keep @Serializable data object FavoritesRoute
 
-@Serializable data class MovieRoute(val movieId: String)
+@Keep @Serializable data class MovieRoute(val movieId: String)
 
-@Serializable data class ShowRoute(val showId: String)
+@Keep @Serializable data class ShowRoute(val showId: String)
 
-@Serializable data class EpisodeRoute(val episodeId: String)
+@Keep @Serializable data class EpisodeRoute(val episodeId: String)
 
-@Serializable data class SeasonRoute(val seasonId: String)
+@Keep @Serializable data class SeasonRoute(val seasonId: String)
 
-@Serializable data class PersonRoute(val personId: String)
+@Keep @Serializable data class PersonRoute(val personId: String)
 
-@Serializable data class SettingsRoute(val indexes: IntArray)
+@Keep @Serializable data class SettingsRoute(val indexes: IntArray)
 
-@Serializable data object AboutRoute
+@Keep @Serializable data object AboutRoute
 
 data class TabBarItem(
     @param:StringRes val title: Int,
