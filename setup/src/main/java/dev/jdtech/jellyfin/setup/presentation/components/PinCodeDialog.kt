@@ -10,7 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
@@ -50,7 +50,10 @@ fun PinCodeDialog(
     Dialog(onDismissRequest = onDismissRequest) {
         Surface(
             shape = RoundedCornerShape(16.dp),
-            modifier = Modifier.padding(24.dp).width(450.dp),
+            modifier = Modifier
+                .padding(16.dp)
+                .widthIn(max = 350.dp) // Reduced max width to fit mobile screens
+                .fillMaxWidth(),
             color = MaterialTheme.colorScheme.surface
         ) {
             Column(
@@ -75,18 +78,18 @@ fun PinCodeDialog(
                         
                         Box(
                             modifier = Modifier
-                                .padding(horizontal = 6.dp)
-                                .size(60.dp)
+                                .padding(horizontal = 4.dp) // Reduced padding
+                                .size(50.dp) // Reduced box size to 50dp
                                 .border(
-                                    width = if (isFocused) 3.dp else 1.dp,
-                                    color = if (isFocused) MaterialTheme.colorScheme.primary else Color.Gray,
+                                    width = if (isFocused) 2.dp else 1.dp,
+                                    color = if (isFocused) MaterialTheme.colorScheme.primary else Color.Gray.copy(alpha = 0.5f),
                                     shape = RoundedCornerShape(8.dp)
                                 ),
                             contentAlignment = Alignment.Center
                         ) {
                             Text(
                                 text = char,
-                                fontSize = 32.sp,
+                                fontSize = 24.sp, // Slightly smaller font for smaller boxes
                                 fontWeight = FontWeight.Bold,
                                 color = MaterialTheme.colorScheme.onSurface
                             )
@@ -112,7 +115,7 @@ fun PinCodeDialog(
                     },
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
                     modifier = Modifier
-                        .size(1.dp) // Minimum size to avoid layout issues
+                        .size(1.dp)
                         .focusRequester(focusRequester)
                         .onKeyEvent { event ->
                             if (event.key == Key.Back && pin.isNotEmpty()) {
@@ -125,7 +128,7 @@ fun PinCodeDialog(
                 )
 
                 LaunchedEffect(Unit) {
-                    delay(100) // Delay focus request until dialog is fully placed
+                    delay(100)
                     focusRequester.requestFocus()
                 }
             }
