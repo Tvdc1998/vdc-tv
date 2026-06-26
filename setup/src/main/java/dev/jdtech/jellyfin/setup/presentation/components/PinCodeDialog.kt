@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -49,7 +50,7 @@ fun PinCodeDialog(
     Dialog(onDismissRequest = onDismissRequest) {
         Surface(
             shape = RoundedCornerShape(16.dp),
-            modifier = Modifier.padding(24.dp).width(400.dp),
+            modifier = Modifier.padding(24.dp).width(450.dp),
             color = MaterialTheme.colorScheme.surface
         ) {
             Column(
@@ -64,8 +65,9 @@ fun PinCodeDialog(
                 Spacer(modifier = Modifier.height(24.dp))
                 
                 Row(
-                    horizontalArrangement = Arrangement.spacedBy(12.dp),
-                    verticalAlignment = Alignment.CenterVertically
+                    horizontalArrangement = Arrangement.Center,
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.fillMaxWidth()
                 ) {
                     repeat(4) { index ->
                         val char = if (index < pin.length) "•" else ""
@@ -73,6 +75,7 @@ fun PinCodeDialog(
                         
                         Box(
                             modifier = Modifier
+                                .padding(horizontal = 6.dp)
                                 .size(60.dp)
                                 .border(
                                     width = if (isFocused) 3.dp else 1.dp,
